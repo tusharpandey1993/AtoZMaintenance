@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:fitsSystemWindows="false">
+
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/toolbar" />
+
+
+    <TextView
+        android:id="@+id/welcome_login"
+        style="@style/login_header_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Enter OTP"
+        android:layout_below="@+id/include3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="@dimen/_52sdp"/>
+
+    <TextView
+        android:id="@+id/number_message"
+        style="@style/Login_infoTxtView"
+        android:textSize="@dimen/_13sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_35sdp"
+        android:layout_marginRight="@dimen/_35sdp"
+        android:text="@string/text_number_messsage"
+        android:layout_below="@+id/welcome_login"/>
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent_constraintlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/number_message"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_40sdp">
+
+            <LinearLayout
+                android:id="@+id/linear_input_view"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parent_constraintlayout"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.base.BaseProject.CustomViewsFiles.PinEntryEditText
+                    android:id="@+id/txt_pin_entry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:layout_margin="5dp"
+                    android:focusable="true"
+                    android:textSize="@dimen/_15ssp"
+                    android:textColor="@color/black"
+                    android:textIsSelectable="false" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_input_view">
+
+                <TextView
+                    android:id="@+id/timer_otp_detect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="00:43"
+                    android:textColor="@color/material_orange_600"
+                    android:textSize="@dimen/_25ssp"
+                    android:fontFamily="@font/open_sans_semibold"/>
+
+                <LinearLayout
+                    android:id="@+id/lytResend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_15sdp">
+
+                    <TextView
+                        android:id="@+id/titleOTP"
+                        style="@style/OTP_Tip2"
+                        android:text="@string/titleOTP"
+                        android:layout_gravity="center"/>
+
+                    <!--<Button-->
+                    <!--android:id="@+id/resent_otp"-->
+                    <!--style="@style/otp_resend_button"-->
+                    <!--android:background="@drawable/selector_login_button_blue_rounded_corner"-->
+                    <!--android:text="@string/buttonmobileOTP" />-->
+
+                    <TextView
+                        android:id="@+id/resent_otp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:layout_gravity="center"
+                        android:textSize="@dimen/_13ssp"
+                        android:text="@string/buttonmobileOTP"
+                        android:fontFamily="@font/open_sans_semibold"
+                        android:textColor="@color/black"/>
+
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/changeNumber"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:layout_marginTop="@dimen/OTP_ChngNum_marginTop"-->
+                    <!--android:fontFamily="@font/open_sans_semibold"-->
+                    <!--android:text="@string/changeNumber"-->
+                    <!--android:textColor="@color/idonthavemiko_color"-->
+                    <!--android:textSize="@dimen/OTP_ChngNum_Textsize" -->
+                    <!--/>-->
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/changeNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/open_sans"
+        android:gravity="center"
+        android:text="@string/changeNumber"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:layout_marginBottom="@dimen/_27sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</RelativeLayout>
+

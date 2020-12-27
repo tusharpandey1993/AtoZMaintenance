@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutGetBranch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="Select Branch">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_branch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:textColorHint="@color/greyed_out"
+            android:focusableInTouchMode="true"
+            android:maxLines="1"
+            android:textSize="@dimen/_13ssp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutGetUnit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:hint="Select Unit">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_unit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="false"
+            android:enabled="false"
+            android:textColorHint="@color/greyed_out"
+            android:focusableInTouchMode="true"
+            android:textSize="@dimen/_13ssp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:id="@+id/assignCourseCheckboxContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="1">
+
+
+        <CheckBox
+            android:id="@+id/assignCourseCB"
+            style="@style/desc_text"
+            android:text="Assign Course"
+            android:layout_weight="0.6"/>
+
+        <CheckBox
+            android:id="@+id/assignAssessCB"
+            style="@style/desc_text"
+            android:text="Assign Assessment"
+            android:layout_weight="0.4"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/resetOneEmpET"
+                style="@style/desc_text"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:layout_margin="@dimen/_5sdp"
+                android:layout_weight="0.5"
+                android:focusable="false"
+                android:focusableInTouchMode="true"
+                android:hint="Select"
+                android:textColorHint="@color/greyed_out" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/reassignEmp"
+            android:text="Reassign"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@drawable/access_pack_bg_gradient"
+            style="@style/btn_login"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/_2sdp"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reassignAll"
+        android:text="Assign To All"
+        android:background="@drawable/access_pack_bg_gradient"
+        style="@style/btn_login"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/_5sdp"/>
+
+    <View
+        android:id="@+id/barrierView"
+        android:background="@color/gray_300"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="2dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/filteredListRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp" />
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/feedBackTextEntry"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/round_bg"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:paddingStart="10dp"
+        android:maxLength="100"
+        android:hint="Enter Feedback Here (Max 100)"
+        fbutton:layout_constraintBottom_toTopOf="@+id/dialogNext"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintHorizontal_bias="0.5"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/correctText" />
+
+    <TextView
+        android:id="@+id/correctText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="center"
+        android:text="Enter your valuable feedback"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        fbutton:layout_constraintBottom_toTopOf="@+id/feedBackTextEntry"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintHorizontal_bias="0.5"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toTopOf="parent" />
+
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/dialogNext"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_30sdp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        fbutton:layout_constraintBottom_toBottomOf="parent"
+        fbutton:layout_constraintEnd_toEndOf="parent"
+        fbutton:layout_constraintHorizontal_bias="0.5"
+        fbutton:layout_constraintStart_toStartOf="parent"
+        fbutton:layout_constraintTop_toBottomOf="@+id/feedBackTextEntry" />
+</androidx.constraintlayout.widget.ConstraintLayout>

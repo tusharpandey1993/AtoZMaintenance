@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="@dimen/_10sdp"
+            android:elevation="@dimen/_10sdp"
+            android:background="@drawable/broad_analytics_card_background">
+
+            <TextView
+                android:id="@+id/cardHeading"
+                style="@style/sub_heading_text"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="Card Heading"
+                app:layout_constraintBottom_toTopOf="@+id/totalCoursesHeading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/completedCourses"
+                style="@style/hint_text"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="5"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/courseCompletionProgess"
+                app:layout_constraintEnd_toEndOf="@+id/completedCoursesHeading" />
+
+
+            <TextView
+                android:id="@+id/completedCoursesHeading"
+                style="@style/hint_text"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="Completed"
+                app:layout_constraintBottom_toTopOf="@+id/completedCourses"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <TextView
+                android:id="@+id/totalCoursesHeading"
+                style="@style/hint_text"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Total"
+                app:layout_constraintBottom_toTopOf="@+id/totalCourses"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/totalCourses"
+                style="@style/hint_text"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:text="10"
+                android:textStyle="bold"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintBottom_toTopOf="@+id/courseCompletionProgess"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/zeroProgressText"
+                style="@style/hint_text"
+                android:text="0"
+                android:visibility="gone"
+                android:layout_marginStart="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/courseCompletionProgess"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/courseCompletionProgess" />
+
+            <TextView
+                android:id="@+id/progressEndPercentage"
+                style="@style/hint_text"
+                android:text="100 %"
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/courseCompletionProgess"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/courseCompletionProgess" />
+
+            <ProgressBar
+                android:id="@+id/courseCompletionProgess"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:indeterminate="false"
+                android:max="100"
+                android:layout_margin="@dimen/_5sdp"
+                android:progressDrawable="@drawable/progress_bar_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/progressEndPercentage"
+                app:layout_constraintStart_toEndOf="@+id/zeroProgressText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

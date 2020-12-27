@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="0dp"
+        android:layout_margin="@dimen/_10sdp"
+        android:elevation="@dimen/_10sdp"
+        card_view:cardElevation="@dimen/margin10"
+        card_view:cardMaxElevation="@dimen/margin10"
+        card_view:contentPadding="@dimen/margin10">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/relativeLayout"
+            android:background="@drawable/round_bg"
+            android:elevation="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/cardHeading"
+                style="@style/sub_heading_text"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:padding="@dimen/_2sdp"
+                android:text="Card Heading"
+                app:layout_constraintBottom_toTopOf="@+id/totalCoursesHeading"
+                app:layout_constraintEnd_toStartOf="@+id/buttonInstallSchedule"
+                app:layout_constraintStart_toEndOf="@+id/completedIcon"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/completedIcon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/ic_done"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/cardHeading"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardHeading" />
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buttonInstallSchedule"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:background="@drawable/as_home_install_schedule_bg"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="@+id/cardHeading"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardHeading">
+
+                <TextView
+                    android:id="@+id/InstallScheduleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/open_sans_semibold"
+                    android:gravity="center"
+                    android:text="Attempt"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <!--
+                <TextView
+                    android:id="@+id/onMiko2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:gravity="center"
+
+                    android:textColor="#555555"
+                    android:textSize="@dimen/_10sdp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/InstallScheduleText" />
+-->
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+            <TextView
+                android:id="@+id/completedOn"
+                style="@style/normal_text"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text=""
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/barrier"
+                app:layout_constraintStart_toEndOf="@+id/barrier" />
+
+            <View
+                android:id="@+id/barrier"
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@color/gray_300"
+                app:layout_constraintBottom_toBottomOf="@+id/assignedDate"
+                app:layout_constraintStart_toEndOf="@+id/assignedDate"
+                app:layout_constraintTop_toTopOf="@+id/completedCoursesHeading" />
+
+            <TextView
+                android:id="@+id/totalCoursesHeading"
+                style="@style/hint_text"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Completed On"
+                app:layout_constraintBottom_toTopOf="@+id/completedOn"
+                app:layout_constraintStart_toStartOf="@+id/completedOn" />
+
+            <TextView
+                android:id="@+id/completedCoursesHeading"
+                style="@style/hint_text"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Assigned On"
+                app:layout_constraintBottom_toTopOf="@+id/assignedDate"
+                app:layout_constraintStart_toStartOf="@+id/assignedDate" />
+
+
+            <TextView
+                android:id="@+id/assignedOn"
+                style="@style/hint_text"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Assigned On"
+                app:layout_constraintBottom_toTopOf="@+id/assignedDate"
+                app:layout_constraintStart_toStartOf="@+id/assignedDate" />
+
+            <TextView
+                android:id="@+id/assignedDate"
+                style="@style/normal_text"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:text="28 Sep 2020"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toTopOf="@+id/courseCompletionProgess"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/statusHeading"
+                style="@style/hint_text"
+                android:layout_marginBottom="@dimen/_3sdp"
+                android:text="Status"
+                app:layout_constraintBottom_toTopOf="@+id/status"
+                app:layout_constraintStart_toStartOf="@+id/status" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/normal_text"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text="Completed"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/barrier2"
+                app:layout_constraintStart_toEndOf="@+id/barrier2" />
+
+            <View
+                android:id="@+id/barrier2"
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@color/gray_300"
+                app:layout_constraintBottom_toBottomOf="@+id/completedOn"
+                app:layout_constraintStart_toEndOf="@+id/totalCoursesHeading"
+                app:layout_constraintTop_toTopOf="@+id/totalCoursesHeading" />
+
+
+            <TextView
+                android:id="@+id/scoreHeading"
+                style="@style/hint_text"
+                android:text="Score"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                app:layout_constraintBottom_toTopOf="@+id/percentage"
+                app:layout_constraintStart_toEndOf="@+id/barrier3" />
+
+            <TextView
+                android:id="@+id/percentage"
+                style="@style/normal_text"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:text=""
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/barrier3"
+                app:layout_constraintStart_toEndOf="@+id/barrier3" />
+
+
+            <View
+                android:id="@+id/barrier3"
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:background="@color/gray_300"
+                app:layout_constraintBottom_toBottomOf="@+id/status"
+                app:layout_constraintStart_toEndOf="@+id/status"
+                app:layout_constraintTop_toTopOf="@+id/statusHeading" />
+
+            <!--<ProgressBar
+                android:id="@+id/courseCompletionProgess"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />-->
+
+            <ProgressBar
+                android:id="@+id/courseCompletionProgess"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="12dp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:indeterminate="false"
+                android:max="100"
+                android:layout_margin="@dimen/_5sdp"
+                android:progressDrawable="@drawable/progress_bar_bg"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/progressEndPercentage"
+                app:layout_constraintStart_toStartOf="parent"  />
+
+            <TextView
+                android:id="@+id/progressEndPercentage"
+                style="@style/hint_text"
+                android:text=""
+                android:layout_marginEnd="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/courseCompletionProgess"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/courseCompletionProgess" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

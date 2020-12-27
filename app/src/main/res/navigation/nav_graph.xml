@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@+id/SplashFragment">
+
+    <fragment
+        android:id="@+id/SplashFragment"
+        android:name="com.base.BaseProject.Fragments.SplashFragment"
+        android:label="Splash Fragment"
+        tools:layout="@layout/splash_activty">
+        <action
+            android:id="@+id/action_splashFragment_to_loginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_dashboardFragment"
+            app:destination="@id/DashboardFragment" />
+        <action
+            android:id="@+id/action_splashFragment_to_dashboardTrainerFragment"
+            app:destination="@id/DashboardTrainer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/LoginFragment"
+        android:name="com.base.BaseProject.Fragments.LoginFragment"
+        android:label="Login Fragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_loginFragment_to_successFragment"
+            app:destination="@id/SuccessFragment" />
+
+        <argument
+            android:name="fromPage"
+            app:argType="string" />
+    </fragment>
+    <!--
+
+    <fragment
+        android:id="@+id/OtpFragment"
+        android:name="com.trig.trigapp.Fragments.OtpFragment"
+        android:label="Otp Fragment"
+        tools:layout="@layout/fragment_otp">
+        <action
+            android:id="@+id/action_otpFragment_to_dashboardFragment"
+            app:destination="@id/DashboardFragment" />
+        <action
+            android:id="@+id/action_otpFragment_to_LoginFragment"
+            app:popUpTo="@+id/LoginFragment" />
+    </fragment>
+-->
+
+    <fragment
+        android:id="@+id/DashboardFragment"
+        android:name="com.base.BaseProject.Fragments.DashboardFragment"
+        android:label="Dashboard Fragment"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_Contact"
+            app:destination="@id/Contact" />
+
+        <action
+            android:id="@+id/action_dashboardFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/VideoFragment"
+        android:name="com.base.BaseProject.Fragments.VideoListFragment"
+        android:label="Video Fragment"
+        tools:layout="@layout/fragment_video_list">
+        <action
+            android:id="@+id/action_VideoListFrag_to_VideoStreamingFrag"
+            app:destination="@id/VideoStreamingFragment" />
+        <action
+            android:id="@+id/action_VideoListFrag_to_DashbordFragment"
+            app:destination="@id/DashboardFragment" />
+
+
+        <action
+            android:id="@+id/action_VideoListFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+
+
+        <action
+            android:id="@+id/action_VideoListFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+
+        <action
+            android:id="@+id/action_dashboardFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/VideoStreamingFragment"
+        android:name="com.base.BaseProject.Fragments.VideoStreamingFragment"
+        android:label="Video Streaming Fragment"
+        tools:layout="@layout/fragment_video_streaming">
+        <action
+            android:id="@+id/action_VideoStreamingFrag_to_VideoListFragment"
+            app:destination="@id/VideoFragment" />
+
+        <action
+            android:id="@+id/action_dashboardFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/AssessmentFragmentNew"
+        android:name="com.base.BaseProject.Fragments.AssessmentFragmentNew"
+        android:label="Assessment Fragment"
+        tools:layout="@layout/quiz_layout">
+        <action
+            android:id="@+id/action_AssessmentFrag_to_DashbordFragment"
+            app:destination="@id/DashboardFragment" />
+
+        <action
+            android:id="@+id/action_AssessmentFrag_to_VideoListFragment"
+            app:destination="@id/VideoFragment" />
+        <action
+            android:id="@+id/action_AssessmentFrag_to_CoursesTopics"
+            app:destination="@id/CoursesTopics" />
+
+        <action
+            android:id="@+id/action_AssessmentFrag_to_SuccessFragment"
+            app:destination="@id/SuccessFragment" />
+
+        <action
+            android:id="@+id/action_dashboardFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/FeedbackFragment"
+        android:name="com.base.BaseProject.Fragments.FeedbackFragment"
+        android:label="Feedback Fragment"
+        tools:layout="@layout/fragment_feedback">
+
+        <action
+            android:id="@+id/action_Feedback_to_Dasboard"
+            app:destination="@id/DashboardFragment" />
+
+        <action
+            android:id="@+id/action_dashboardFrag_to_SuccessFragment"
+            app:destination="@id/SuccessFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+
+        <action
+            android:id="@+id/action_Feedback_to_ReportFragment"
+            app:destination="@id/ReportFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SuccessFragment"
+        android:name="com.base.BaseProject.Fragments.SuccessFragment"
+        android:label="Success Fragment"
+        tools:layout="@layout/fragment_success">
+
+        <action
+            android:id="@+id/action_fragment_success_to_dashboardFragment"
+            app:destination="@id/DashboardFragment" />
+        <action
+            android:id="@+id/action_fragment_success_to_dashboardTrainerFragment"
+            app:destination="@id/DashboardTrainer" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ProfileFragment"
+        android:name="com.base.BaseProject.Fragments.ProfileFragment"
+        android:label="Profile Fragment"
+        tools:layout="@layout/profile">
+
+        <action
+            android:id="@+id/action_profile_to_dashboardFragment"
+            app:destination="@id/DashboardFragment" />
+        <action
+            android:id="@+id/action_profile_to_dashboardTrainerFragment"
+            app:destination="@id/DashboardTrainer" />
+        <!--  dashboard -->
+        <action
+            android:id="@+id/action_dashboardFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+
+        <!-- dashboard trainer-->
+
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ReportFrag"
+            app:destination="@id/ReportFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_AssignCourseTrainerFrag"
+            app:destination="@id/AssignCourseTrainer" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/DashboardTrainer"
+        android:name="com.base.BaseProject.Fragments.DashboardTrainer"
+        android:label="Dashboard Fragment"
+        tools:layout="@layout/dashboard_trainer">
+
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ReportFrag"
+            app:destination="@id/ReportFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_AssignCourseTrainerFrag"
+            app:destination="@id/AssignCourseTrainer" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/ReportFragment"
+        android:name="com.base.BaseProject.Fragments.ReportFragment"
+        android:label="Dashboard Fragment"
+        tools:layout="@layout/dashboard_trainer">
+
+        <action
+            android:id="@+id/action_Report_to_dashboardTrainerFragment"
+            app:destination="@id/DashboardTrainer" />
+
+        <action
+            android:id="@+id/action_ReportFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_ReportFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_ReportFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_ReportFrag_to_AssignCourseTrainerFrag"
+            app:destination="@id/AssignCourseTrainer" />
+
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ReportFrag"
+            app:destination="@id/ReportFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_AssignCourseTrainerFrag"
+            app:destination="@id/AssignCourseTrainer" />
+
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/AssignCourseTrainer"
+        android:name="com.base.BaseProject.Fragments.AssignCourseTrainer"
+        android:label="Dashboard Fragment"
+        tools:layout="@layout/assign_course_trainer">
+
+        <action
+            android:id="@+id/action_AssignCourse_to_dashboardTrainerFragment"
+            app:destination="@id/DashboardTrainer" />
+
+        <action
+            android:id="@+id/action_AssignCourseTrainerFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_AssignCourseTrainerFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_AssignCourseTrainerFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_AssignCourseTrainerFrag_to_ReportFrag"
+            app:destination="@id/ReportFragment" />
+        <action
+            android:id="@+id/action_AssignCourseTrainerFrag_to_AssignCourseTrainerFrag"
+            app:destination="@id/AssignCourseTrainer" />
+
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ReportFrag"
+            app:destination="@id/ReportFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_AssignCourseTrainerFrag"
+            app:destination="@id/AssignCourseTrainer" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/Contact"
+        android:name="com.base.BaseProject.Fragments.Contact"
+        android:label="Contact Fragment"
+        tools:layout="@layout/contact">
+
+        <action
+            android:id="@+id/action_contact_to_dashboardFragment"
+            app:destination="@id/DashboardFragment" />
+        <action
+            android:id="@+id/action_contact_to_dashboardTrainerFragment"
+            app:destination="@id/DashboardTrainer" />
+        <!--    Dashboard -->
+        <action
+            android:id="@+id/action_dashboardFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+
+        <!--    Dashboard trainer-->
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_ReportFrag"
+            app:destination="@id/ReportFragment" />
+        <action
+            android:id="@+id/action_DashboardTrainerFrag_to_AssignCourseTrainerFrag"
+            app:destination="@id/AssignCourseTrainer" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CoursesTopics"
+        android:name="com.base.BaseProject.Fragments.CoursesTopics"
+        android:label="Contact Fragment"
+        tools:layout="@layout/course_topic">
+
+
+        <action
+            android:id="@+id/action_topics_to_dashboardFragment"
+            app:destination="@id/DashboardFragment" />
+
+        <action
+            android:id="@+id/action_topics_to_VideoFragment"
+            app:destination="@id/VideoFragment">
+            <argument
+                android:name="item_id"
+                android:defaultValue="1"
+                app:argType="integer" />
+        </action>
+        <action
+            android:id="@+id/action_dashboardFrag_to_LoginFragment"
+            app:destination="@id/LoginFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_FeedbackFragment"
+            app:destination="@id/FeedbackFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_ProfileFragment"
+            app:destination="@id/ProfileFragment" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_Contact"
+            app:destination="@id/Contact" />
+        <action
+            android:id="@+id/action_dashboardFrag_to_topics"
+            app:destination="@id/CoursesTopics" />
+        <action
+            android:id="@+id/action_topics_to_AssessmentFragment"
+            app:destination="@id/AssessmentFragmentNew">
+            <argument
+                android:name="item_id"
+                android:defaultValue="1"
+                app:argType="integer" />
+
+        </action>
+
+    </fragment>
+
+
+</navigation>

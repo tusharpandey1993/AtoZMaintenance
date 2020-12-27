@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/startGuide"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.10" />
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/main_bg_gradient"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.base.BaseProject.CustomViewsFiles.CircleImageView
+                android:id="@+id/profileImg"
+                android:layout_width="@dimen/_110sdp"
+                android:layout_height="@dimen/_110sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:src="@drawable/trig_bg"
+                app:civ_border_color="@color/trans_black"
+                app:civ_border_width="6dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+
+            <!--<TextView
+                android:id="@+id/contactUsText"
+                style="@style/heading_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Profile"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/profileImg" />-->
+
+            <ImageView
+                android:id="@+id/backgroundImageChange2"
+                android:layout_width="@dimen/_23sdp"
+                android:layout_height="@dimen/_23sdp"
+                android:layout_marginLeft="@dimen/_90sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/ic_placeholder_grey_circle"
+                android:elevation="@dimen/_10sdp"
+                android:padding="@dimen/_5sdp"
+                android:visibility="gone"
+                android:src="@drawable/ic_camera"
+                app:layout_constraintBottom_toBottomOf="@+id/profileImg"
+                app:layout_constraintStart_toStartOf="@+id/profileImg" />
+
+            <ImageView
+                android:id="@+id/nameIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/ic_name"
+                android:layout_marginTop="@dimen/_20sdp"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/profileImg" />
+
+            <TextView
+                android:id="@+id/nameHint"
+                style="@style/hint_text"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text="@string/nameHint"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/nameIcon"
+                app:layout_constraintStart_toEndOf="@+id/nameIcon"
+                app:layout_constraintTop_toTopOf="@+id/nameIcon" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/nameIcon"
+                app:layout_constraintStart_toEndOf="@+id/nameIcon"
+                app:layout_constraintTop_toBottomOf="@+id/nameHint" />
+
+
+            <ImageView
+                android:id="@+id/emailIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_email"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/name" />
+
+            <TextView
+                android:id="@+id/emailHint"
+                style="@style/hint_text"
+                android:text="@string/emailHint"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/emailIcon"
+                app:layout_constraintStart_toEndOf="@+id/emailIcon"
+                app:layout_constraintTop_toTopOf="@+id/emailIcon" />
+
+            <TextView
+                android:id="@+id/email"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/emailIcon"
+                app:layout_constraintStart_toEndOf="@+id/emailIcon"
+                app:layout_constraintTop_toBottomOf="@+id/emailHint" />
+
+
+            <ImageView
+                android:id="@+id/employeeIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_employee_code"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/employeeCodeHint"
+                style="@style/hint_text"
+                android:text="@string/employeeCode"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/employeeIcon"
+                app:layout_constraintStart_toEndOf="@+id/employeeIcon"
+                app:layout_constraintTop_toTopOf="@+id/employeeIcon" />
+
+            <TextView
+                android:id="@+id/employeeCode"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/employeeIcon"
+                app:layout_constraintStart_toEndOf="@+id/employeeIcon"
+                app:layout_constraintTop_toBottomOf="@+id/employeeCodeHint" />
+
+
+            <ImageView
+                android:id="@+id/designationIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_designation"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/employeeCode" />
+
+            <TextView
+                android:id="@+id/designationHint"
+                style="@style/hint_text"
+                android:text="@string/employeeCode"
+                android:layout_marginStart="@dimen/_20sdp"
+                app:layout_constraintStart_toEndOf="@+id/designationIcon"
+                app:layout_constraintTop_toTopOf="@+id/designationIcon" />
+
+            <TextView
+                android:id="@+id/designation"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/designationIcon"
+                app:layout_constraintStart_toEndOf="@+id/designationIcon"
+                app:layout_constraintTop_toBottomOf="@+id/designationHint" />
+
+
+            <ImageView
+                android:id="@+id/genderIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_gender"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/designation" />
+
+            <TextView
+                android:id="@+id/genderHint"
+                style="@style/hint_text"
+                android:text="@string/gender"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/genderIcon"
+                app:layout_constraintStart_toEndOf="@+id/genderIcon"
+                app:layout_constraintTop_toTopOf="@+id/genderIcon" />
+
+            <TextView
+                android:id="@+id/gender"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/genderIcon"
+                app:layout_constraintStart_toEndOf="@+id/genderIcon"
+                app:layout_constraintTop_toBottomOf="@+id/genderHint" />
+
+
+            <ImageView
+                android:id="@+id/addressIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_address"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+            <TextView
+                android:id="@+id/addressHint"
+                style="@style/hint_text"
+                android:text="@string/address"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/addressIcon"
+                app:layout_constraintStart_toEndOf="@+id/addressIcon"
+                app:layout_constraintTop_toTopOf="@+id/addressIcon" />
+
+            <TextView
+                android:id="@+id/address"
+                style="@style/normal_text"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:minLines="2"
+
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/addressIcon"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/addressIcon"
+                app:layout_constraintTop_toBottomOf="@+id/addressHint" />
+
+
+            <ImageView
+                android:id="@+id/dobIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_dob"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/address" />
+
+            <TextView
+                android:id="@+id/dobHint"
+                style="@style/hint_text"
+                android:text="@string/dob"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/dobIcon"
+                app:layout_constraintStart_toEndOf="@+id/dobIcon"
+                app:layout_constraintTop_toTopOf="@+id/dobIcon" />
+
+            <TextView
+                android:id="@+id/dob"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/dobIcon"
+                app:layout_constraintStart_toEndOf="@+id/dobIcon"
+                app:layout_constraintTop_toBottomOf="@+id/dobHint" />
+
+
+            <ImageView
+                android:id="@+id/doJoiningIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_calendar"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/dob" />
+
+            <TextView
+                android:id="@+id/doJoiningHint"
+                style="@style/hint_text"
+                android:text="@string/dob"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/doJoiningIcon"
+                app:layout_constraintStart_toEndOf="@+id/doJoiningIcon"
+                app:layout_constraintTop_toTopOf="@+id/doJoiningIcon" />
+
+            <TextView
+                android:id="@+id/doJoining"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/doJoiningIcon"
+                app:layout_constraintStart_toEndOf="@+id/doJoiningIcon"
+                app:layout_constraintTop_toBottomOf="@+id/doJoiningHint" />
+
+            <ImageView
+                android:id="@+id/ageIcon"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_marginTop="24dp"
+                android:src="@drawable/ic_age"
+                android:layout_marginBottom="@dimen/_15sdp"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/doJoining" />
+
+            <TextView
+                android:id="@+id/ageHint"
+                style="@style/hint_text"
+                android:text="@string/age"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/ageIcon"
+                app:layout_constraintStart_toEndOf="@+id/ageIcon"
+                app:layout_constraintTop_toTopOf="@+id/ageIcon" />
+
+            <TextView
+                android:id="@+id/age"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:text=""
+                app:layout_constraintBottom_toBottomOf="@+id/ageIcon"
+                app:layout_constraintStart_toEndOf="@+id/ageIcon"
+                app:layout_constraintTop_toBottomOf="@+id/ageIcon" />
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/bottomSpace"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/doJoiningIcon" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

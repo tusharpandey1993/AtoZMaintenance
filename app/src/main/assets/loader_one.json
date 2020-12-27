@@ -1,0 +1,50 @@
+[
+  {
+    "UserId": 1169,
+    "FullName": "Ashok Suchit  Jaiswal",
+    "Tirg_EmpCode": "DN0000009275",
+    "emp_password": "433979",
+    "Unit": "YESHOMANGAL CHS LTD",
+    "total_course_Count": 11,
+    "total_a_Count": 4,
+    "is_active": 0,
+    "last_login": "",
+    "trainer_branch_name": "D N Nagar."
+  },
+  {
+    "UserId": 6259,
+    "FullName": "Ram  K  Ray",
+    "Tirg_EmpCode": "DN0000008507",
+    "emp_password": "624679",
+    "Unit": "YESHOMANGAL CHS LTD",
+    "total_course_Count": 11,
+    "total_a_Count": 4,
+    "is_active": 1,
+    "last_login": "",
+    "trainer_branch_name": "D N Nagar."
+  },
+  {
+    "UserId": 10481,
+    "FullName": "Ramchandra  Chourasiya",
+    "Tirg_EmpCode": "DN0000010183",
+    "emp_password": "653644",
+    "Unit": "YESHOMANGAL CHS LTD",
+    "total_course_Count": 11,
+    "total_a_Count": 4,
+    "is_active": 1,
+    "last_login": "",
+    "trainer_branch_name": "D N Nagar."
+  },
+  {
+    "UserId": 2324,
+    "FullName": "Rashid Noor  Shaikh",
+    "Tirg_EmpCode": "DN0000007096",
+    "emp_password": "088656",
+    "Unit": "YESHOMANGAL CHS LTD",
+    "total_course_Count": 11,
+    "total_a_Count": 4,
+    "is_active": 0,
+    "last_login": "",
+    "trainer_branch_name": "D N Nagar."
+  }
+]

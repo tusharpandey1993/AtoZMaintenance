@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/navChildLYT"
+    android:layout_margin="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:background="@drawable/broad_analytics_card_background">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/gray_300"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/course_nameHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="Course Name" />
+
+            <TextView
+                android:id="@+id/course_name"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+
+            <TextView
+                android:id="@+id/StatusHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Status" />
+
+            <TextView
+                android:id="@+id/Status"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/course_assigned_dateHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="Assigned Date" />
+
+            <TextView
+                android:id="@+id/course_assigned_date"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/course_completed_dateHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Completed Date" />
+
+            <TextView
+                android:id="@+id/course_completed_date"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#8E0E00</color>
+    <color name="colorPrimaryDark">#4e1209</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="coustom_white">#f9f9f9</color>
+    <color name="theme_bg_color">#3376f6</color>
+    <color name="hint_color">#ababab</color>
+    <color name="material_blue_500">#2196F3</color>
+    <color name="white_transparent_80">#80FFFFFF</color>
+    <color name="idonthavemiko_color">#009ee3</color>
+    <color name="pin_normal">#6B767E</color>
+    <color name="tabTransparent">#4D000000</color>
+    <color name="material_orange_600">#FB8C00</color>
+    <color name="resenddefault">#9A9A9A</color>
+    <color name="textcardColor">#3f3f3f</color>
+    <color name="moduleName">#636363</color>
+    <color name="dark_greyish_brown">#333333</color>
+    <color name="dialog_note">#aaaaaa</color>
+    <!--colorPrimaryDark is used for changing notification colors-->
+
+    <color name="rippelColor">#0099CC</color>
+    <color name="statesBg">#7da7d9</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="facebook_grey">#fe6c6767</color>
+    <color name="default_text_colour">#9E9E9E</color>
+
+    <color name="black">#000000</color>
+    <color name="black_alpha">#66000000</color>
+    <color name="dim_black">#80000000</color>
+
+
+    <color name="wel_white">#ffffff</color>
+
+    <color name="black_333333">#E6333333</color>
+    <color name="grey_cccccc">#ffcccccc</color>
+    <color name="gray">#FF8A8A8A</color>
+
+
+    <color name="gray_300">#f2f2f2</color>
+    <color name="greyish_brown">#CFCFCF</color>
+    <color name="dark_greyish">#5e5e5e</color>
+    <color name="dark_brown">#b38133</color>
+
+
+
+    <!-- Material Color Palette -->
+    <color name="material_gray_600">#757575</color>
+
+    <color name="material_red_300">#E57373</color>
+    <color name="material_red_700">#D32F2F</color>
+
+
+    <color name="material_green_400">#66BB6A</color>
+
+    <color name="material_blue_200">#90CAF9</color>
+    <color name="material_blue_400">#42A5F5</color>
+    <color name="material_blue_600">#b9befa</color>
+
+    <!-- Selectors -->
+    <color name="background">#dddddd</color>
+    <color name="red">#FF0000</color>
+    <color name="black_transparent_50">#50000000</color>
+    <color name="black_transparent_95">#95000000</color>
+    <color name="grey_transparent_50">#50606060</color>
+    <color name="grey_transparent_90">#90606060</color>
+    <color name="grey_transparent_20">#20606060</color>
+    <color name="color_blue_accent">#0088e7</color>
+    <color name="toolbar_subtitle_color">#6e6e6e</color>
+    <color name="toolbar_title_color">#1f1f1f</color>
+
+    <color name="button_end_call_pressed_color">#FC5876</color>
+    <color name="text_color_call_type">#6e6e6e</color>
+    <color name="text_color_also_on_call">@color/text_color_call_type</color>
+    <color name="text_color_other_inc_users">#1f1f1f</color>
+    <color name="text_color_caller_name">#1f1f1f</color>
+    <color name="transparent">#FFFFFFFF</color>
+
+
+    <color name="grey">#606060</color>
+    <color name="blue">#1FCECB</color>
+    <color name="broadAnalyticsBG">#6dcff6</color>
+
+    <color name="text_color_outgoing_opponents_names_audio_call">#1f1f1f</color>
+
+    <color name="background_color_selected_user_item">#eeeeee</color>
+    <color name="background_color_normal_user_item">#ffffff</color>
+    <color name="icon_background_color_selected_user">#959595</color>
+
+    <color name="pressed_bg">#64b7b7b7</color>
+    <color name="dialog_bg">#CC000000</color>
+    <color name="tip_text">#c0c0c0</color>
+    <color name="newNetwork">#bbe0f0</color>
+
+    <!--for login page-->
+    <color name="greyed_out">#7f7f7f</color>
+
+    <!--for otp page-->
+
+    <!--for userdetail page-->
+    <color name="view1">#aaaaaa</color>
+    <color name="view2">#cccccc</color>
+
+    <!--for child Profile page-->
+    <color name="bg_color">#eeeeee</color>
+    <color name="hr_color">#aaaaaa</color>
+    <color name="bg_likes">#d3dae5</color>
+    <color name="bg_chipview_likes">#00aeef</color>
+    <color name="bg_chipview_dislikes">#4a6c9b</color>
+    <color name="bg_chipview_liked">#acacac</color>
+    <color name="stroke_color">#009ee3</color>
+    <color name="privacy_color">#5570ae</color>
+    <color name="button_color">#00aeef</color>
+    <color name="black_transparent">#40000000</color>
+    <color name="age_text_color">#5a6abd</color>
+    <color name="lbl_text_view">#484848</color>
+    <color name="lbl_text_value">#494949</color>
+    <color name="lbl_text_placeholder">#494949</color>
+    <color name="age_color">#5a6abd</color>
+    <color name="select_any_color">#4958a4</color>
+
+    <!--new chnages for broad analytics-->
+
+    <color name="broadanalyticsBG">#a0bad5</color>
+    <color name="broadanalyticsCardTitleColor">#dec665</color>
+    <color name="broadanalyticsHeaderMsg">#495164</color>
+    <color name="broadanalyticsUsagePercent">#6163bd</color>
+    <color name="broadanalyticsHeaderBG">#445a74</color>
+    <color name="broadanalyticsViewHistory">#5c76e8</color>
+    <color name="dark_gray">#515151</color>
+    <color name="dark_grayy">#414141</color>
+    <color name="ochre_yellow">#e2b54a</color>
+    <color name="AS_headingBlack">#333333</color>
+    <color name="mikoNameTxt">#464646</color>
+
+    <!--for module page-->
+    <color name="moduleBase">#7da7d9</color>
+    <color name="moduleSubview">#116eb3</color>
+    <color name="moduleNew">#d7b73a</color>
+    <color name="moduleCost">#f5f5f5</color>
+    <color name="moduleViewDetails">#4c9cff</color>
+    <color name="moduleswipe">#019cff</color>
+    <color name="modulecostnew">#4f4f4f</color>
+    <color name="moduleview">#dee5f4</color>
+    <color name="moduleReviewcart">#64adff</color>
+    <color name="modulepurchasedbackgrnd">#7eb8fd</color>
+    <color name="modulecompanyNameTxt">#4a4a4a</color>
+    <color name="Costmodule">#658ad4</color>
+    <color name="Modulecount">#888888</color>
+    <color name="moduleListBackground">#f1f6ff</color>
+    <color name="moduleAdd">#5da4ff</color>
+
+
+    <!--App Store Colors-->
+    <color name="colour_blue">#0b9eea</color>
+    <color name="bluish_purple">#658ad4</color>
+    <color name="bold_text">#4f4f4f</color>
+    <color name="grey_text">#636363</color>
+    <color name="collapsingToolbar">#295c8f</color>
+
+    <color name="lbl_device_id">#717171</color>
+    <color name="ic_launcher_background">#717171</color>
+
+    <color name="lightGreen">#8BC34A</color>
+    <color name="button_blue">#5dabe6</color>
+    <color name="trans_black">#99FFFFFF</color>
+    <color name="readMoreColor">#1FCECB</color>
+    <color name="gray_indicator">#d8d8d8</color>
+    <color name="region_lebel">#888888</color>
+    <color name="dialog_subhead">#333333</color>
+    <color name="dialog_head">#333333</color>
+    <color name="dialog_negativeColor">#b7b7b7</color>
+    <color name="dialog_confirm">#3376f6</color>
+</resources>

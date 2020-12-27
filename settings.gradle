@@ -1,0 +1,2 @@
+include ':app', ':ccp'
+rootProject.name='BaseProject'

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Dashboard</item>
+        <item>My Cources</item>
+        <item>Assessment</item>
+        <item>Profile</item>
+        <item>Contact Trainer</item>
+        <item>Contact Us</item>
+        <item>Feedback</item>
+        <item>Log Out</item>=
+    </string-array>
+
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_course</item>
+        <item>@drawable/ic_assessment</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_contact_trainer</item>
+        <item>@drawable/ic_contact</item>
+        <item>@drawable/ic_feedback</item>
+        <item>@drawable/ic_logout</item>
+        <item>@drawable/ic_version</item>
+    </array>
+
+    <string-array name="ld_TrainerScreenTitles">
+        <item>Dashboard</item>
+        <item>Assign Course/Assessment</item>
+        <item>Report</item>
+        <item>Profile</item>
+        <item>Contact Us</item>
+        <item>Log Out</item>=
+    </string-array>
+
+
+    <array name="ld_TrainerScreenIcons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_assign</item>
+        <item>@drawable/ic_result</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_contact</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+
+
+</resources>

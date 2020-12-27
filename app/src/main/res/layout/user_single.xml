@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/navChildLYT"
+    android:layout_margin="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10sdp"
+        android:background="@drawable/broad_analytics_card_background">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/gray_300"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/nameHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="User Name" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text=""/>
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+
+            <TextView
+                android:id="@+id/assignedCourseHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Assigned Course" />
+
+            <TextView
+                android:id="@+id/AssignedCourse"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text=""/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/CourseStatusHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Course Status" />
+
+            <TextView
+                android:id="@+id/CourseStatus"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_3sdp"
+                android:text=""/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+            <TextView
+                android:id="@+id/AssignedAssessmentHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Assigned Assessment" />
+
+            <TextView
+                android:id="@+id/AssignedAssessment"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:text=""
+                android:layout_margin="@dimen/_1sdp"
+                android:padding="@dimen/_2sdp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/AssessmentStatusHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Assessment Status" />
+
+            <TextView
+                android:id="@+id/AssessmentStatus"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:text=""
+                android:layout_margin="@dimen/_1sdp"
+                android:padding="@dimen/_2sdp" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/AssessmentScoreHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:text="Assessment Score" />
+
+            <TextView
+                android:id="@+id/AssessmentScore"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:text=""
+                android:layout_margin="@dimen/_1sdp"
+                android:padding="@dimen/_2sdp"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_5sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/EmpCodeHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="Emp Code" />
+
+            <TextView
+                android:id="@+id/empCode"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text="" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/EmpPasswordHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Emp Password" />
+
+            <TextView
+                android:id="@+id/EmpPassword"
+                style="@style/desc_text"
+                android:textSize="@dimen/_12ssp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:text=""/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/UserStatusHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="User Status" />
+
+            <Switch
+                android:id="@+id/UserStatus"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/ViewCoursedetailsHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="View Course details" />
+
+            <TextView
+                android:id="@+id/ViewCoursedetails"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:padding="@dimen/_2sdp"
+                android:layout_margin="@dimen/_2sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/access_pack_bg_gradient"
+                android:text="  Courses   "
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/AssessmentHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="View Assessment Details" />
+
+            <TextView
+                android:id="@+id/Assessment"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:padding="@dimen/_2sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/access_pack_bg_gradient"
+                android:text="  Assessment    "
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/gray_300"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:id="@+id/feedbackHeading"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Feedback" />
+
+            <TextView
+                android:id="@+id/feedback"
+                style="@style/hint_text"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_2sdp"
+                android:textColor="@color/white"
+                android:padding="@dimen/_2sdp"
+                android:background="@drawable/access_pack_bg_gradient"
+                android:text="  Feedback    "
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

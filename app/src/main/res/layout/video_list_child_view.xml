@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/childMainLYT"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_90sdp"
+    android:layout_margin="@dimen/_5sdp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/broad_analytics_card_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/constraintLayout2">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.26" />
+
+
+        <TextView
+            android:id="@+id/listViewTitle"
+            style="@style/sub_heading_text"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/open_sans_bold"
+            android:gravity="start"
+            android:singleLine="true"
+            android:text="@string/hello_blank_fragment"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toTopOf="@+id/startDateHeading"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/StatusTitle"
+            style="@style/hint_text"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="Status"
+            app:layout_constraintBottom_toTopOf="@+id/status"
+            app:layout_constraintStart_toStartOf="@+id/status" />
+
+        <TextView
+            android:id="@+id/status"
+            style="@style/normal_text"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Completed"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline" />
+
+        <View
+            android:id="@+id/barrier2"
+            android:layout_width="2dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:background="@color/gray_300"
+            app:layout_constraintBottom_toBottomOf="@+id/status"
+            app:layout_constraintStart_toEndOf="@+id/status"
+            app:layout_constraintTop_toTopOf="@+id/StatusTitle" />
+
+        <TextView
+            android:id="@+id/startDateHeading"
+            style="@style/hint_text"
+            android:text="Start Date"
+            android:layout_marginBottom="@dimen/_3sdp"
+            app:layout_constraintBottom_toTopOf="@+id/date"
+            app:layout_constraintStart_toStartOf="@+id/date" />
+
+        <TextView
+            android:id="@+id/date"
+            style="@style/normal_text"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text=""
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@+id/barrier2"
+            app:layout_constraintStart_toEndOf="@+id/barrier2" />
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="15dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:indeterminate="false"
+            android:max="100"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_bar_bg"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/guideline" />
+
+
+        <TextView
+            android:id="@+id/percentageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="64%"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/progressBar2"
+            app:layout_constraintStart_toEndOf="@id/progressBar2"
+            app:layout_constraintTop_toTopOf="@id/progressBar2" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="2dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="8dp"
+            android:background="#d2d2d2"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/percentageView"
+            app:layout_constraintStart_toEndOf="@+id/percentageView"
+            app:layout_constraintTop_toTopOf="@+id/percentageView" />
+
+        <TextView
+
+            android:id="@+id/vidsRemaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="3/5"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintStart_toEndOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="@dimen/_66sdp"
+        android:layout_height="@dimen/_66sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
