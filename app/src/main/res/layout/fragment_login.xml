@@ -14,10 +14,10 @@
 
     <ImageView
         android:id="@+id/trigLogo"
-        android:layout_width="@dimen/_70sdp"
-        android:layout_height="@dimen/_70sdp"
-        android:layout_marginTop="@dimen/_40sdp"
-        android:src="@drawable/ic_bg"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:src="@drawable/logo_new"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include" />
@@ -65,7 +65,7 @@
             android:id="@+id/linear_input_view"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginTop="8dp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -78,7 +78,7 @@
                 style="@style/image_left_drawable_icon_size"
                 android:scaleType="fitXY"
                 android:src="@drawable/ic_phone"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -95,25 +95,15 @@
                 app:layout_constraintStart_toEndOf="@+id/id_mobile_icons"
                 app:layout_constraintTop_toTopOf="@+id/id_mobile_icons" />
 
-
-            <!--   <com.hbb20.CountryCodePicker
-                android:id="@+id/ccp"
-                style="@style/countryCodePicker_txt"
-                android:background="@drawable/underlinebg"
-                app:ccpDialog_keyboardAutoPopup="false"
-                app:ccp_textSize="@dimen/_13sdp"
-                app:layout_constraintBottom_toBottomOf="@+id/id_mobile_icons"
-                app:layout_constraintTop_toBottomOf="@+id/mobile_no" />-->
-
             <EditText
                 android:id="@+id/edit_UserName"
                 style="@style/login_editText_style"
                 android:background="@drawable/underlinebg"
+                android:backgroundTint="@color/black"
                 android:hint="@string/UserNameHintRegOnLogin"
+                android:imeOptions="actionNext"
                 android:maxLength="20"
                 android:text=""
-                android:imeOptions="actionNext"
-                android:backgroundTint="@color/black"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/mobile_no"
                 app:layout_constraintTop_toBottomOf="@+id/mobile_no" />
@@ -126,7 +116,7 @@
             android:id="@+id/password_parent"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_4sdp"
             android:orientation="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -139,7 +129,7 @@
                 style="@style/image_left_drawable_icon_size"
                 android:scaleType="fitXY"
                 android:src="@drawable/ic_password"
-                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

@@ -3,8 +3,6 @@ package com.base.BaseProject.Fragments;
 
 import android.content.Context;
 import android.os.Bundle;
-
-
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -16,12 +14,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import androidx.activity.OnBackPressedCallback;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.navigation.Navigation;
-
 import com.base.BaseProject.CommonFiles.Constants;
 import com.base.BaseProject.CommonFiles.Utility;
 import com.base.BaseProject.CommonFiles.AppPreferences;

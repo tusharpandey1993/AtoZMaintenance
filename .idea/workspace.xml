@@ -2,19 +2,65 @@
 <project version="4">
   <component name="AndroidLayouts">
     <shared>
-      <config />
+      <config>
+        <device id="4in WVGA (Nexus S)" />
+      </config>
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="onResponseAssessmentTopicList:" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="mixpanel" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="NONE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="88a877b7-8318-4539-8b45-0c4bfc925491" name="Default Changelist" comment="" />
+    <list default="true" id="88a877b7-8318-4539-8b45-0c4bfc925491" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_carpenter.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_civil.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_gardening.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_maintenance.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_painting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_plumbing.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_water_tank_cleaning.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_dark.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_new.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_no_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/LoginFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/director.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/director_new.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/founder.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_account_outline_grey600_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_cart_outline_grey600_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_emaill.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_outline_grey600_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_logout_grey600_24dp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/india_branches_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/trig_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,7 +77,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="BaseProject" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -50,6 +101,7 @@
     <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="1hbiPPDsIaKANyCVmU2xKAmoW0a" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
@@ -64,8 +116,8 @@
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1609095541846" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1610276268377" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -342,6 +394,17 @@
     <option name="localTasksCounter" value="26" />
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="back buttons,onboarding added" />
     <MESSAGE value="drawer opening issue resolved, white elevated view in drawer resolved" />
@@ -366,22 +429,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="390" y="40" width="642" height="712" key="#app" timestamp="1601564930808">
+    <state x="254" y="27" width="915" height="741" key="#Java" timestamp="1609095909695">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="390" y="40" width="642" height="712" key="#app/67.27.1299.741@67.27.1299.741" timestamp="1601564930808" />
+    <state x="254" y="27" width="915" height="741" key="#Java/67.27.1299.741@67.27.1299.741" timestamp="1609095909695" />
     <state x="524" y="108" width="374" height="577" key="#com.intellij.ide.util.MemberChooser" timestamp="1602711641315">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="524" y="108" width="374" height="577" key="#com.intellij.ide.util.MemberChooser/67.27.1299.741@67.27.1299.741" timestamp="1602711641315" />
-    <state x="392" y="27" width="629" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601314065630">
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610277617825">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="392" y="27" width="629" height="741" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/67.27.1299.741@67.27.1299.741" timestamp="1601314065630" />
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608895757201">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1608895757201" />
+    <state x="449" y="145" width="524" height="502" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/67.27.1299.741@67.27.1299.741" timestamp="1610277617825" />
     <state x="562" y="163" width="309" height="466" key="AndroidProcessChooserDialog" timestamp="1603484940436">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -390,7 +449,6 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="166" y="27" width="912" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1606328446152" />
-    <state x="166" y="27" key="CommitChangelistDialog2/67.27.957.741@67.27.957.741" timestamp="1600367156238" />
     <state width="557" height="506" key="DebuggerActiveHint" timestamp="1603484973958">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -399,29 +457,37 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="95" y="27" width="1131" height="681" maximized="true" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1606328436943" />
-    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1602096331445">
+    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1610277729278">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1602096331445" />
-    <state width="1253" height="263" key="GridCell.Tab.0.bottom" timestamp="1606326083414">
+    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1610277729278" />
+    <state x="564" y="296" key="Github.ShareDialog" timestamp="1609095980543">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="263" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1606326083414" />
+    <state x="564" y="296" key="Github.ShareDialog/67.27.1299.741@67.27.1299.741" timestamp="1609095980543" />
+    <state x="369" y="83" width="684" height="626" key="Github.UntrackedFilesDialog" timestamp="1609095987734">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="369" y="83" width="684" height="626" key="Github.UntrackedFilesDialog/67.27.1299.741@67.27.1299.741" timestamp="1609095987734" />
+    <state width="1253" height="328" key="GridCell.Tab.0.bottom" timestamp="1610085186394">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state width="1253" height="328" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1610085186394" />
     <state width="911" height="330" key="GridCell.Tab.0.bottom/67.27.957.741@67.27.957.741" timestamp="1602496814097" />
-    <state width="1253" height="263" key="GridCell.Tab.0.center" timestamp="1606326083413">
+    <state width="1253" height="328" key="GridCell.Tab.0.center" timestamp="1610085186393">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="263" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1606326083413" />
+    <state width="1253" height="328" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1610085186393" />
     <state width="911" height="330" key="GridCell.Tab.0.center/67.27.957.741@67.27.957.741" timestamp="1602496814097" />
-    <state width="1253" height="263" key="GridCell.Tab.0.left" timestamp="1606326083413">
+    <state width="1253" height="328" key="GridCell.Tab.0.left" timestamp="1610085186392">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="263" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1606326083413" />
+    <state width="1253" height="328" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1610085186392" />
     <state width="911" height="330" key="GridCell.Tab.0.left/67.27.957.741@67.27.957.741" timestamp="1602496814096" />
-    <state width="1253" height="263" key="GridCell.Tab.0.right" timestamp="1606326083414">
+    <state width="1253" height="328" key="GridCell.Tab.0.right" timestamp="1610085186394">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="263" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1606326083414" />
+    <state width="1253" height="328" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1610085186394" />
     <state width="911" height="330" key="GridCell.Tab.0.right/67.27.957.741@67.27.957.741" timestamp="1602496814097" />
     <state width="1253" height="120" key="GridCell.Tab.1.bottom" timestamp="1603485035505">
       <screen x="67" y="27" width="1299" height="741" />
@@ -459,14 +525,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1606328448107" />
-    <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog" timestamp="1606368873917">
+    <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog" timestamp="1610290166690">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog/67.27.1299.741@67.27.1299.741" timestamp="1606368873917" />
-    <state x="167" y="125" width="1099" height="543" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1601318221224">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="167" y="125" width="1099" height="543" key="com.android.tools.idea.avdmanager.AvdListDialog/67.27.1299.741@67.27.1299.741" timestamp="1601318221224" />
+    <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog/67.27.1299.741@67.27.1299.741" timestamp="1610290166690" />
     <state x="167" y="125" width="1099" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602709164742">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -476,26 +538,18 @@
     </state>
     <state x="292" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1603087763479" />
     <state x="292" y="224" key="com.intellij.ide.util.TipDialog/67.27.957.741@67.27.957.741" timestamp="1603517375697" />
-    <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606157344303">
+    <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609096071940">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1606157344303" />
+    <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1609096071940" />
     <state x="368" y="136" width="696" height="522" key="find.popup" timestamp="1608895911992">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="368" y="136" width="696" height="522" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1608895911992" />
-    <state x="382" y="189" width="658" height="415" key="git4idea.merge.GitPullDialog" timestamp="1601406978806">
+    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1610279068215">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="382" y="189" width="658" height="415" key="git4idea.merge.GitPullDialog/67.27.1299.741@67.27.1299.741" timestamp="1601406978806" />
-    <state x="380" y="175" key="run.anything.popup" timestamp="1600455821815">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="380" y="175" key="run.anything.popup/67.27.1299.741@67.27.1299.741" timestamp="1600455821815" />
-    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1608895801270">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1608895801270" />
+    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1610279068214" />
     <state x="297" y="88" width="672" height="678" key="search.everywhere.popup/67.27.957.741@67.27.957.741" timestamp="1603517387368" />
   </component>
   <component name="XDebuggerManager">
@@ -514,7 +568,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/LoginFragment.java</url>
-          <line>158</line>
+          <line>154</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
