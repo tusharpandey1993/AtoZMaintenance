@@ -57,12 +57,12 @@
 
 
     <array name="homeIcons">
-        <item>@drawable/ic_home</item>
-        <item>@drawable/ic_assign</item>
-        <item>@drawable/ic_result</item>
-        <item>@drawable/ic_profile</item>
-        <item>@drawable/ic_contact</item>
-        <item>@drawable/ic_logout</item>
+        <item>@drawable/ic_carpenter</item>
+        <item>@drawable/ic_painting</item>
+        <item>@drawable/ic_gardening</item>
+        <item>@drawable/ic_plumbing</item>
+        <item>@drawable/ic_civil</item>
+        <item>@drawable/ic_water_tank_cleaning</item>
     </array>
 
 
