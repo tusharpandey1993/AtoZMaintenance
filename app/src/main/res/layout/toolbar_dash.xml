@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/open_sans_semibold"
                     android:gravity="center"
-                    android:text="Trig Group"
+                    android:text="Home"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColor="@color/white"
                     android:textSize="@dimen/_16sdp"

@@ -65,15 +65,15 @@ public class OnboardingDialogFragment extends DialogFragment {
     private void setData() {
         ArrayList<OnBoarding> onBoardingArrayList = new ArrayList<>();
 
-        onBoardingArrayList.add(new OnBoarding(R.drawable.ic_age, "TRIG GROUP", "T Trusted R Resourceful I Integrated G Guardforce \nTRIG is one of India's leading professionally managed Watch & Ward Security Solutions Provider with a holistic range of specialized services to offer to its clients. With its 360 DEGREE  SECURITY SYSTEMS APPROACH, TRIG Group not only specializes in offering Man Power Security Solutions to Corporates and Residential Spaces, but have also established a niche in offering state-of-the-art Electronic Security Solutions to meet the growing need of Digital Surveillance Systems.\n" +
+        onBoardingArrayList.add(new OnBoarding(R.drawable.logo, "TRIG GROUP", "T Trusted R Resourceful I Integrated G Guardforce \nTRIG is one of India's leading professionally managed Watch & Ward Security Solutions Provider with a holistic range of specialized services to offer to its clients. With its 360 DEGREE  SECURITY SYSTEMS APPROACH, TRIG Group not only specializes in offering Man Power Security Solutions to Corporates and Residential Spaces, but have also established a niche in offering state-of-the-art Electronic Security Solutions to meet the growing need of Digital Surveillance Systems.\n" +
                 "Since its inception in 1980, TRIG Group has defined its priority in offering error-free and vigilant security surveillance to exceed customer satisfaction. As on this day, TRIG Group has enrolled over 15,000 security professionals, 3,000 chauffeurs and a dedicated team of Trained Managers and Officers to seamlessly manage its 26 branches across India."));
 
-        onBoardingArrayList.add(new OnBoarding(R.drawable.founder, "Mr. Swaran Salaria\n" +
+        onBoardingArrayList.add(new OnBoarding(R.drawable.logo, "Mr. Swaran Salaria\n" +
                 "(FOUNDER)", "Having started this company with a single service contract of 10 Security Personnel, it gives me immense pride that my team and I have come a long way and achieved several milestones. Today, we at TRIG Group pride over our uncompromising quality and exceptional attention to detail to ensure 100% Customer Satisfaction.\n" +
                 "TRIG Group relentlessly works towards offering comprehensive and cost-effective security solutions to a variety of clients from various industries throughout India.\n" +
                 "Now, TRIG Group has grown across various horizons of Security Industry and specializes in offering cutting edge watch and ward & digital surveillance systems, be it for corporates and residential spaces or for large public gatherings across India."));
 
-        onBoardingArrayList.add(new OnBoarding(R.drawable.director_new, "Mr. Shammee Salaria\n" +
+        onBoardingArrayList.add(new OnBoarding(R.drawable.logo, "Mr. Shammee Salaria\n" +
                 "(Managing Director)", "Being from the New Generation and with High Ambitions of Growing our Group into various areas, Shammee brings on the table innovative ideas and competitive working environment which is extremely important to nurture the VALUES and PRINCIPLES on which our company was established. Having learnt the hard way by experiencing the Operations Activities of the company, today, he is delighted to have developed an Excellent Team of Energetic Professionals who support each other in achieving our Company’s VISION, & to implement ISO Standard’s."));
 
         OnBoardingPagerAdapter adapter = new OnBoardingPagerAdapter(mActivity, onBoardingArrayList);

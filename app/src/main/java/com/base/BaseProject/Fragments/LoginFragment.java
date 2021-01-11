@@ -153,13 +153,15 @@ public class LoginFragment extends BaseFragment implements IPresenter, GenericDi
             if(passWord.equalsIgnoreCase("0")){
                 AppPreferences.setLoginCategory(mActivity, Constants.getInstance().trainer);
             } else {
-                if(Utility.getInstance().isNetworkAvailable(mActivity)) {
+                Navigation.findNavController(requireActivity(),R.id.navHostFragment)
+                        .navigate(R.id.action_loginFragment_to_successFragment);
+                /*if(Utility.getInstance().isNetworkAvailable(mActivity)) {
                     LoginRequest request = new LoginRequest(UserName, passWord);
                     showLoader();
                     viewModel.callLoginApi(request);
                 }else{
                     ShowGenericDialog(Constants.getInstance().NoInternetCase, Constants.OK, mActivity.getResources().getString(R.string.no_internet_message),"");
-                }
+                }*/
             }
         }
     }

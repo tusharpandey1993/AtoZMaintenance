@@ -45,7 +45,7 @@
                 android:layout_width="@dimen/_110sdp"
                 android:layout_height="@dimen/_110sdp"
                 android:layout_marginTop="@dimen/_40sdp"
-                android:src="@drawable/trig_bg"
+                android:src="@drawable/logo_new"
                 app:civ_border_color="@color/trans_black"
                 app:civ_border_width="6dp"
                 app:layout_constraintEnd_toEndOf="parent"

@@ -5,6 +5,7 @@
     <string name="welcome_login">Welcome</string>
 
     <string name="infoTxtViewLogin">Enter your account details to get started.</string>
+    <string name="registerText">Register Here.</string>
 
 
     <string name="MobEmailTxtViewReg">UserName</string>

@@ -45,4 +45,25 @@
     </array>
 
 
+
+    <string-array name="homeItems">
+        <item>Carpenter</item>
+        <item>Painting</item>
+        <item>Gardaning</item>
+        <item>Plumbing</item>
+        <item>Civil</item>
+        <item>Water Tank Cleaning</item>=
+    </string-array>
+
+
+    <array name="homeIcons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_assign</item>
+        <item>@drawable/ic_result</item>
+        <item>@drawable/ic_profile</item>
+        <item>@drawable/ic_contact</item>
+        <item>@drawable/ic_logout</item>
+    </array>
+
+
 </resources>
