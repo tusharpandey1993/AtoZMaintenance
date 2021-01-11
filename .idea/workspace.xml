@@ -35,38 +35,77 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a877b7-8318-4539-8b45-0c4bfc925491" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_carpenter.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_civil.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_gardening.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_maintenance.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_painting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_plumbing.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_water_tank_cleaning.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_dark.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_new.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_no_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/DataPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/RegisterFragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_user.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_register.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/LoginFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/director.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/director_new.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/founder.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_account_outline_grey600_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_cart_outline_grey600_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_emaill.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_home_outline_grey600_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_logout_grey600_24dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/india_branches_icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/trig_bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/base/BaseProject/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/base/AtoZMaintenanceApp/ExampleInstrumentedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Adapter/DialogItemClickListAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Adapter/DialogItemClickListAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Adapter/NavDrawerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Adapter/NavDrawerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Adapter/OnClickInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Adapter/OnClickInterface.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/AppPreferences.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/AppPreferences.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/CustomSelectionDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/CustomSelectionDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/DataPayload.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/MobileConnectPermissions.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/MobileConnectPermissions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/NoInternetDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/NoInternetDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/PermissionCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/PermissionCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/PermissionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/PermissionRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/ViewDialogCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/ViewDialogCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/onDialogClickCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/onDialogClickCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CustomViewsFiles/CircleImageView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CustomViewsFiles/CircleImageView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CustomViewsFiles/CustomListViewDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CustomViewsFiles/CustomListViewDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CustomViewsFiles/LoaderFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CustomViewsFiles/LoaderFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CustomViewsFiles/PinEntryEditText.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CustomViewsFiles/PinEntryEditText.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CustomViewsFiles/ReadMoreTextView.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CustomViewsFiles/ReadMoreTextView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CustomViewsFiles/genericPopUp/GenericDialogBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CustomViewsFiles/genericPopUp/GenericDialogBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CustomViewsFiles/genericPopUp/GenericDialogClickListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CustomViewsFiles/genericPopUp/GenericDialogClickListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CustomViewsFiles/genericPopUp/GenericDialogPopup.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CustomViewsFiles/genericPopUp/GenericDialogPopup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/BaseFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/BaseFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/DashboardFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/DashboardFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/LoginFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/OtpFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/OtpFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/ProfileFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/ProfileFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/RegisterFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/SplashFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/SplashFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/SuccessFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/SuccessFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/MVP/IPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/MVP/IPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/MVP/ViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/MVP/ViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Model/DataModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Model/DataModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/api/Request/LoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/api/Request/LoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/api/Response/getLoginRes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/api/Response/getLoginRes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/api/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/api/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/menu/DrawerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/menu/DrawerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/menu/DrawerItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/menu/DrawerItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/menu/SimpleItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/menu/SimpleItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/menu/SpaceItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/menu/SpaceItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/onBoarding/OnBoarding.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/onBoarding/OnBoarding.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/onBoarding/OnBoardingPagerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/onBoarding/OnBoardingPagerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/onBoarding/OnboardingDialogFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/onBoarding/OnboardingDialogFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_otp.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_otp.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/list_item_onboarding.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/list_item_onboarding.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/nav_graph2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/base/BaseProject/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/base/AtoZMaintenanceApp/ExampleUnitTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[VirtualDevicePath@/home/tushar/.android/avd/2.7_QVGA_API_22.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[PDAID18101506336]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -77,12 +116,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="BaseProject" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -116,7 +150,7 @@
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments" />
     <property name="memory.settings.postsync.last.time.stamp" value="1610276268377" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
@@ -130,11 +164,11 @@
       <recent name="com.trig.trigapp.Fragments" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
       <recent name="$PROJECT_DIR$/app/src/main/assets" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/trig/trigapp/MVP" />
     </key>
   </component>
   <component name="RunManager">
@@ -146,14 +180,13 @@
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="BaseProject.app" />
+      <module name="AtoZMaintenanceApp.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
       <option name="ARTIFACT_NAME" value="" />
       <option name="PM_INSTALL_OPTIONS" value="" />
       <option name="ALL_USERS" value="false" />
-      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
       <option name="MODE" value="default_activity" />
@@ -204,7 +237,7 @@
       </method>
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -404,6 +437,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="back buttons,onboarding added" />
@@ -469,25 +503,25 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="369" y="83" width="684" height="626" key="Github.UntrackedFilesDialog/67.27.1299.741@67.27.1299.741" timestamp="1609095987734" />
-    <state width="1253" height="328" key="GridCell.Tab.0.bottom" timestamp="1610085186394">
+    <state width="1253" height="263" key="GridCell.Tab.0.bottom" timestamp="1610387151696">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="328" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1610085186394" />
+    <state width="1253" height="263" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1610387151696" />
     <state width="911" height="330" key="GridCell.Tab.0.bottom/67.27.957.741@67.27.957.741" timestamp="1602496814097" />
-    <state width="1253" height="328" key="GridCell.Tab.0.center" timestamp="1610085186393">
+    <state width="1253" height="263" key="GridCell.Tab.0.center" timestamp="1610387151694">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="328" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1610085186393" />
+    <state width="1253" height="263" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1610387151694" />
     <state width="911" height="330" key="GridCell.Tab.0.center/67.27.957.741@67.27.957.741" timestamp="1602496814097" />
-    <state width="1253" height="328" key="GridCell.Tab.0.left" timestamp="1610085186392">
+    <state width="1253" height="263" key="GridCell.Tab.0.left" timestamp="1610387151693">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="328" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1610085186392" />
+    <state width="1253" height="263" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1610387151693" />
     <state width="911" height="330" key="GridCell.Tab.0.left/67.27.957.741@67.27.957.741" timestamp="1602496814096" />
-    <state width="1253" height="328" key="GridCell.Tab.0.right" timestamp="1610085186394">
+    <state width="1253" height="263" key="GridCell.Tab.0.right" timestamp="1610387151695">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="328" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1610085186394" />
+    <state width="1253" height="263" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1610387151695" />
     <state width="911" height="330" key="GridCell.Tab.0.right/67.27.957.741@67.27.957.741" timestamp="1602496814097" />
     <state width="1253" height="120" key="GridCell.Tab.1.bottom" timestamp="1603485035505">
       <screen x="67" y="27" width="1299" height="741" />
@@ -505,10 +539,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="1253" height="120" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1603485035505" />
-    <state x="88" y="27" width="1138" height="680" key="MergeDialog" timestamp="1602698887125">
+    <state x="88" y="27" width="1138" height="680" key="MergeDialog" timestamp="1610387030555">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="88" y="27" width="1138" height="680" key="MergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1602698887125" />
+    <state x="88" y="27" width="1138" height="680" key="MergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1610387030555" />
     <state x="421" y="112" width="580" height="568" key="MultipleFileMergeDialog" timestamp="1602698887127">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -525,10 +559,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1606328448107" />
-    <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog" timestamp="1610290166690">
+    <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog" timestamp="1610304761035">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog/67.27.1299.741@67.27.1299.741" timestamp="1610290166690" />
+    <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog/67.27.1299.741@67.27.1299.741" timestamp="1610304761035" />
     <state x="167" y="125" width="1099" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1602709164742">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -538,46 +572,41 @@
     </state>
     <state x="292" y="224" key="com.intellij.ide.util.TipDialog/67.27.1299.741@67.27.1299.741" timestamp="1603087763479" />
     <state x="292" y="224" key="com.intellij.ide.util.TipDialog/67.27.957.741@67.27.957.741" timestamp="1603517375697" />
-    <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1609096071940">
+    <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610387037413">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1609096071940" />
-    <state x="368" y="136" width="696" height="522" key="find.popup" timestamp="1608895911992">
+    <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1610387037413" />
+    <state x="368" y="136" width="717" height="522" key="find.popup" timestamp="1610381977225">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="368" y="136" width="696" height="522" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1608895911992" />
-    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1610279068215">
+    <state x="368" y="136" width="717" height="522" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1610381977225" />
+    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1610382150992">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1610279068214" />
+    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1610382150992" />
     <state x="297" y="88" width="672" height="678" key="search.everywhere.popup/67.27.957.741@67.27.957.741" timestamp="1603517387368" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/DashboardFragment.java</url>
-          <line>226</line>
-          <properties class="com.base.BaseProject.Fragments.DashboardFragment" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/DashboardFragment.java</url>
+          <line>220</line>
+          <properties class="com.base.AtoZMaintenanceApp.Fragments.DashboardFragment" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/SuccessFragment.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/SuccessFragment.java</url>
           <line>79</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Fragments/LoginFragment.java</url>
-          <line>154</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/CommonFiles/CustomSelectionDialog.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/CustomSelectionDialog.java</url>
           <line>51</line>
           <option name="timeStamp" value="41" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/BaseProject/Adapter/DialogItemClickListAdapter.java</url>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Adapter/DialogItemClickListAdapter.java</url>
           <line>40</line>
           <option name="timeStamp" value="44" />
         </line-breakpoint>

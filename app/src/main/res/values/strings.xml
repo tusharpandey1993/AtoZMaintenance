@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BaseProject</string>
+    <string name="app_name">AtoZMaintenanceApp</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="welcome_login">Welcome</string>
@@ -218,4 +218,28 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--register frag design changes-->
+    <string name="NameTxtViewReg">PARENT\’S NAME</string>
+    <string name="PasswordTxtViewReg">Password</string>
+    <string name="wifi_password">ENTER PASSWORD</string>
+    <string name="EmailTxtViewReg">PARENT\’S EMAIL ADDRESS</string>
+    <string name="MobTxtViewReg">PARENT\’S MOBILE NUMBER</string>
+    <string name="BtnTxtViewReg">Submit</string>
+    <string name="NameHintReg">Enter Name</string>
+    <string name="EmailHintReg">Enter Valid Email</string>
+
+    <string name="MobileNoHintReg">Enter Mobile Number</string>
+    <!--<string name="alreadyRegistered">Already have an account?<![CDATA[<b><font color=#0000FF>Login</font></b>]]></string>-->
+    <!--<string name="alreadyRegistered">Already have an account? <font fgcolor='#0099CC'>Login</font></string>-->
+    <!--    <string name="alreadyRegistered">"Already have an account? &lt;font color='#2196F3'&gt;Login&lt;/font&gt;"</string>-->
+    <string name="alreadyRegistered">Already have an account?</string>
+    <string name="RegisterLogin">Log In</string>
+    <string name="logout">Log Out</string>
+    <string name="titleRegister">App will recognize you as the user and sync its data with this account.</string>
+    <string name="privacy_info_register">By tapping Submit, you are indicating that you have read and agreed to our <b>Privacy Policy</b>.</string>
+    <string name="titleTxtViewRegister">Register</string>
+    <string name="error_invalid_name">"Please enter Name"</string>
+    <string name="error_invalid_email_empty">Email address cannot be empty</string>
+    <string name="error_invalid_mobilenumber">Please enter a valid number.</string>
 </resources>

@@ -64,7 +64,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <com.base.BaseProject.CustomViewsFiles.PinEntryEditText
+                <com.base.AtoZMaintenanceApp.CustomViewsFiles.PinEntryEditText
                     android:id="@+id/txt_pin_entry"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

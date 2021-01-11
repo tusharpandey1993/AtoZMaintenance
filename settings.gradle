@@ -1,2 +1,2 @@
 include ':app', ':ccp'
-rootProject.name='BaseProject'
+rootProject.name='AtoZMaintenanceApp'
