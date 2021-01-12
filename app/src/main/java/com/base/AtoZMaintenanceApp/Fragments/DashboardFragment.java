@@ -9,6 +9,9 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.Lifecycle;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -16,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.base.AtoZMaintenanceApp.Adapter.DashboardServiceListAdapter;
 import com.base.AtoZMaintenanceApp.Adapter.OnClickInterface;
 import com.base.AtoZMaintenanceApp.CommonFiles.Constants;
 import com.base.AtoZMaintenanceApp.CommonFiles.AppPreferences;
@@ -39,8 +43,9 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
     private View mView;
     public static boolean fromCourses = false;
     public static boolean goToContactTrainer = false;
-
+    DashboardServiceListAdapter selectedAdapter;
     private ImageView closeIcon;
+    RecyclerView recyclerViewList;
 
     private SlidingRootNav slidingRootNav;
 
@@ -64,6 +69,12 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
 
         init(mView);
 
+        selectedAdapter = new DashboardServiceListAdapter(mActivity,this);
+//        LinearLayoutManager mLayoutManager = new LinearLayoutManager(mActivity);
+//        recyclerViewList.setLayoutManager(mLayoutManager);
+        recyclerViewList.setLayoutManager(new GridLayoutManager(mActivity, 2));
+        recyclerViewList.setAdapter(selectedAdapter);
+
         return mView;
     }
 
@@ -76,7 +87,7 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
 
 
     private void init(View mView) {
-
+        recyclerViewList = mView.findViewById(R.id.recyclerViewList);
     }
 
     @Override

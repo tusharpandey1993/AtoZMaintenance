@@ -163,6 +163,7 @@ public class LoginFragment extends BaseFragment implements IPresenter, GenericDi
              Log.d(TAG, "checkValidation: passWord " + passWord);
              if (Utility.getInstance().isNetworkAvailable(mActivity)) {
                  if(UserName.equalsIgnoreCase("admin") && passWord.equalsIgnoreCase("admin")){
+                     AppPreferences.getInstance().setUser_Type(mActivity,Constants.getInstance().user);
                      Navigation.findNavController(requireActivity(),R.id.navHostFragment)
                              .navigate(R.id.action_loginFragment_to_successFragment);
                  }
