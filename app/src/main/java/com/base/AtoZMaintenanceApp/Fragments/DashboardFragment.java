@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.Lifecycle;
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -69,8 +70,9 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
         init(mView);
 
         selectedAdapter = new DashboardServiceListAdapter(mActivity,this);
-        LinearLayoutManager mLayoutManager = new LinearLayoutManager(mActivity);
-        recyclerViewList.setLayoutManager(mLayoutManager);
+//        LinearLayoutManager mLayoutManager = new LinearLayoutManager(mActivity);
+//        recyclerViewList.setLayoutManager(mLayoutManager);
+        recyclerViewList.setLayoutManager(new GridLayoutManager(mActivity, 2));
         recyclerViewList.setAdapter(selectedAdapter);
 
         return mView;

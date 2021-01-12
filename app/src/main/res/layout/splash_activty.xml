@@ -14,6 +14,7 @@
         android:layout_alignParentBottom="true"
         android:scaleType="centerCrop"
         android:layout_marginTop="@dimen/_100sdp"
+        android:src="@drawable/logo_new"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -24,9 +25,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Base App"
-        android:textColor="#ffffff"
+        android:text="A to Z Maintenance"
+        android:textColor="#000000"
         android:textSize="@dimen/_23ssp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="@+id/root_view"
         app:layout_constraintStart_toStartOf="@+id/root_view"
         app:layout_constraintTop_toBottomOf="@+id/root_view" />
