@@ -220,11 +220,11 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 
     <!--register frag design changes-->
-    <string name="NameTxtViewReg">PARENT\’S NAME</string>
+    <string name="NameTxtViewReg">COMPANY\’S  NAME</string>
     <string name="PasswordTxtViewReg">Password</string>
     <string name="wifi_password">ENTER PASSWORD</string>
-    <string name="EmailTxtViewReg">PARENT\’S EMAIL ADDRESS</string>
-    <string name="MobTxtViewReg">PARENT\’S MOBILE NUMBER</string>
+    <string name="EmailTxtViewReg">COMPANY\’S EMAIL ADDRESS</string>
+    <string name="MobTxtViewReg">COMPANY\’S MOBILE NUMBER</string>
     <string name="BtnTxtViewReg">Submit</string>
     <string name="NameHintReg">Enter Name</string>
     <string name="EmailHintReg">Enter Valid Email</string>

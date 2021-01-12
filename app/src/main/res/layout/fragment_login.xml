@@ -166,7 +166,7 @@
         <Button
             android:id="@+id/btn_login"
             style="@style/btn_login"
-            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/access_pack_bg_gradient"
             android:text="@string/continueBtnLogin"
             app:layout_constraintBottom_toBottomOf="parent"
