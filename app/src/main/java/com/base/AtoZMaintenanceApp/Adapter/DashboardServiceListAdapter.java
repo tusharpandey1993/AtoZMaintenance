@@ -47,6 +47,12 @@ public class DashboardServiceListAdapter extends RecyclerView.Adapter<DashboardS
         try {
                 holder.item_icon.setBackgroundResource(ta.getResourceId(position, 0));
                 holder.title.setText(ta2[position]);
+                holder.parent.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        onClickListner.onClick(v, position);
+                    }
+                });
         } catch (Exception e){
             Log.e("TAG", "onBindViewHolder: " + e.getMessage() );
         }
@@ -63,9 +69,11 @@ public class DashboardServiceListAdapter extends RecyclerView.Adapter<DashboardS
         public View view;
         public ImageView item_icon;
         private TextView title;
+        private ConstraintLayout parent;
         public MyViewHolder(View v) {
             super(v);
             try {
+                parent = v.findViewById(R.id.parent);
                 item_icon = v.findViewById(R.id.item_icon);
                 title = v.findViewById(R.id.title);
             } catch (Exception e){

@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_150sdp"
+    android:layout_margin="@dimen/_10sdp"
     android:background="@drawable/round_bg">
 
     <ImageView
@@ -21,7 +24,7 @@
         style="@style/sub_heading_text"
         android:layout_width="wrap_content"
         android:text="Water Tank Cleaning"
-        android:textSize="@dimen/_19ssp"
+        android:textSize="@dimen/_17ssp"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"

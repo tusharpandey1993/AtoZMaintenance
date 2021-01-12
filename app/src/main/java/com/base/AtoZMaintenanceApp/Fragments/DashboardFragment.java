@@ -127,66 +127,31 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
 
     }
 
-    public final int POS_DASHBOARD = 0;
-    public final int POS_COURCES = 1;
-    public final int POS_ASSESSMENT = 2;
-    public final int POS_PROFILE = 3;
-    public final int POS_CONTACT_US = 4;
-    public final int POS_CONTACT_TRAINER = 5;
-    public final int POS_FEEDBACK = 6;
-    public final int POS_LOGOUT = 7;
+    public final int Carpenter = 0;
+    public final int Painting = 1;
+    public final int Gardaning = 2;
+    public final int Plumbing = 3;
+    public final int Civil = 4;
+    public final int Water_tank_cleaning = 5;
 
     @Override
     public void onClick(View view, int position) {
         try {
-
+            Log.d(TAG, "onClick: poej " +position);
             switch (position) {
-                case POS_DASHBOARD:
+                case Carpenter:
                     break;
-                case POS_COURCES:
-                    fromCourses = true;
-                  /*  Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                            .navigate(R.id.action_dashboardFrag_to_topics);*/
+                case Painting:
                     break;
-                case POS_ASSESSMENT:
-                  /*  Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                            .navigate(R.id.action_dashboardFrag_to_topics);*/
+                case Gardaning:
                     break;
-                case POS_PROFILE:
-                    Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                            .navigate(R.id.action_dashboardFrag_to_ProfileFragment);
+                case Plumbing:
                     break;
-                case POS_CONTACT_US:
-                    goToContactTrainer = true;
-                   /* Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                            .navigate(R.id.action_dashboardFrag_to_Contact);*/
+                case Civil:
                     break;
-                case POS_CONTACT_TRAINER:
-                    goToContactTrainer = false;
-                   /* Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                            .navigate(R.id.action_dashboardFrag_to_Contact);*/
+                case Water_tank_cleaning:
                     break;
-                case POS_FEEDBACK:
-                   /* Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                            .navigate(R.id.action_dashboardFrag_to_FeedbackFragment);*/
-                    break;
-                case POS_LOGOUT:
-                    AppPreferences.setLoginPref(mActivity, false);
-                    GenericDialogPopup genericDialogPopup = null;
-                    GenericDialogBuilder genericDialogBuilder = new GenericDialogBuilder.Builder()
-                            .setShowCloseButton(false)
-                            .setHeading(mActivity.getResources().getString(R.string.logoutHeading))
-                            .setDescription(mActivity.getResources().getString(R.string.appLogout))
-                            .setPositiveButtonText(Constants.LOGOUT)
-                            .setNegativeButtonText(Constants.Cancel)
-                            .setGenericDialogClickListener(DashboardFragment.this)
-                            .setFucntionNumber(Constants.getInstance().logout)
-                            .build();
-                    Utility.getInstance().showDynamicDialog(mActivity, genericDialogBuilder, genericDialogPopup, mActivity.getSupportFragmentManager());
-                    break;
-            }
-            if (slidingRootNav != null) {
-                slidingRootNav.closeMenu();
+
             }
         } catch (Exception e) {
             Log.e(TAG, "onClick: exception" + e.getMessage());
