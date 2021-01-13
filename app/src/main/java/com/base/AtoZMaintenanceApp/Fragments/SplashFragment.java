@@ -44,14 +44,8 @@ public class SplashFragment extends Fragment {
                 if(AppPreferences.getIsShowedShowcaseAppStore(mActivity)) {
                     if (AppPreferences.isLoggedIn(mActivity)) {
                         Log.d(TAG, "run: true ");
-                        if (AppPreferences.getUser_Type(mActivity).equalsIgnoreCase(Constants.getInstance().user)) {
-                            Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                                    .navigate(R.id.action_splashFragment_to_dashboardFragment);
-                        } else if (AppPreferences.getUser_Type(mActivity).equalsIgnoreCase(Constants.getInstance().trainer)) {
-                           /* Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                                    .navigate(R.id.action_splashFragment_to_dashboardTrainerFragment);*/
-                        }
-
+                        Navigation.findNavController(requireActivity(), R.id.navHostFragment)
+                                .navigate(R.id.action_splashFragment_to_dashboardFragment);
                     } else {
                         Log.d(TAG, "run: false");
                         Navigation.findNavController(requireActivity(), R.id.navHostFragment)

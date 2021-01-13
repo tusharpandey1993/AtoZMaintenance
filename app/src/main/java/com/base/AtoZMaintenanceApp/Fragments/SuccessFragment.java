@@ -80,8 +80,8 @@ public class SuccessFragment extends Fragment {
         if(AppPreferences.getSource_To_Desitnation(mActivity) == Constants.getInstance().loginScreen) {
 
             if (AppPreferences.getUser_Type(mActivity).equalsIgnoreCase(Constants.getInstance().user)) {
-                Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                        .navigate(R.id.action_fragment_success_to_dashboardFragment);
+
+                moveToDashboard();
             } else if (AppPreferences.getUser_Type(mActivity).equalsIgnoreCase(Constants.getInstance().trainer)) {
                 /*Navigation.findNavController(requireActivity(), R.id.navHostFragment)
                         .navigate(R.id.action_fragment_success_to_dashboardTrainerFragment);*/
@@ -90,8 +90,7 @@ public class SuccessFragment extends Fragment {
         } else if(AppPreferences.getSource_To_Desitnation(mActivity) == Constants.getInstance().feedback) {
 
             if (AppPreferences.getUser_Type(mActivity).equalsIgnoreCase(Constants.getInstance().user)) {
-                Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                        .navigate(R.id.action_fragment_success_to_dashboardFragment);
+                moveToDashboard();
             } else if (AppPreferences.getUser_Type(mActivity).equalsIgnoreCase(Constants.getInstance().trainer)) {
                /* Navigation.findNavController(requireActivity(), R.id.navHostFragment)
                         .navigate(R.id.action_fragment_success_to_dashboardTrainerFragment);*/
@@ -99,8 +98,13 @@ public class SuccessFragment extends Fragment {
 
         } else {
 
-            Navigation.findNavController(requireActivity(),R.id.navHostFragment)
-                    .navigate(R.id.action_fragment_success_to_dashboardFragment);
+            moveToDashboard();
         }
+    }
+
+    private void moveToDashboard() {
+        AppPreferences.setLoginPref(mActivity, true);
+        Navigation.findNavController(requireActivity(), R.id.navHostFragment)
+                .navigate(R.id.action_fragment_success_to_dashboardFragment);
     }
 }

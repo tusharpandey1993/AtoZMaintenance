@@ -1,43 +1,33 @@
 package com.base.AtoZMaintenanceApp.Fragments;
 
 import android.Manifest;
+import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextUtils;
-import android.text.TextWatcher;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.DatePicker;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.base.AtoZMaintenanceApp.Adapter.ImagesAdapter;
-import com.base.AtoZMaintenanceApp.CommonFiles.Utility;
 import com.base.AtoZMaintenanceApp.R;
-
 import java.util.ArrayList;
 import java.util.Arrays;
-
-import pl.aprilapps.easyphotopicker.ChooserType;
-import pl.aprilapps.easyphotopicker.DefaultCallback;
-import pl.aprilapps.easyphotopicker.EasyImage;
-import pl.aprilapps.easyphotopicker.MediaFile;
-import pl.aprilapps.easyphotopicker.MediaSource;
+import com.base.AtoZMaintenanceApp.imagePicker.ChooserType;
+import com.base.AtoZMaintenanceApp.imagePicker.DefaultCallback;
+import com.base.AtoZMaintenanceApp.imagePicker.EasyImage;
+import com.base.AtoZMaintenanceApp.imagePicker.MediaFile;
+import com.base.AtoZMaintenanceApp.imagePicker.MediaSource;
 
 public class ReportFragment extends BaseFragment {
 
@@ -85,7 +75,8 @@ public class ReportFragment extends BaseFragment {
         }
 
         imagesAdapter = new ImagesAdapter(mActivity, photos);
-        recyclerView.setLayoutManager(new LinearLayoutManager(mActivity));
+
+        recyclerView.setLayoutManager(new LinearLayoutManager(mActivity, LinearLayoutManager.VERTICAL, true));
         recyclerView.setHasFixedSize(true);
         recyclerView.setAdapter(imagesAdapter);
 
@@ -105,6 +96,7 @@ public class ReportFragment extends BaseFragment {
             public void onClick(View view) {
                 String[] necessaryPermissions = new String[]{Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE};
                 if (arePermissionsGranted(necessaryPermissions)) {
+                    Log.d(TAG, "onClick: " );
                     easyImage.openChooser(mActivity);
                 } else {
                     requestPermissionsCompat(necessaryPermissions, CHOOSER_PERMISSIONS_REQUEST_CODE);
@@ -146,6 +138,7 @@ public class ReportFragment extends BaseFragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
 
+        Log.d(TAG, "onActivityResult:requestCode " + requestCode + " resultCode " + resultCode + " data " + data);
         easyImage.handleActivityResult(requestCode, resultCode, data, mActivity, new DefaultCallback() {
             @Override
             public void onMediaFilesPicked(MediaFile[] imageFiles, MediaSource source) {
@@ -176,13 +169,9 @@ public class ReportFragment extends BaseFragment {
 
     private boolean arePermissionsGranted(String[] permissions) {
         for (String permission : permissions) {
-            if (ContextCompat.checkSelfPermission(mActivity, permission) != PackageManager.PERMISSION_GRANTED)
-                Log.d("KL", "arePermissionsGranted: ");
-         /*   startActivity(new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS,
-                    Uri.parse("package:" + BuildConfig.APPLICATION_ID)));
-*/
-            return false;
-
+            if (ContextCompat.checkSelfPermission(mActivity, permission) != PackageManager.PERMISSION_GRANTED) {
+                return false;
+            }
         }
         return true;
     }

@@ -51,6 +51,22 @@
             app:destination="@id/ProfileFragment" />
 
 
+        <action
+            android:id="@+id/action_dashboardFrag_to_ReportFragment"
+            app:destination="@id/ReportFragment" />
+
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/ReportFragment"
+        android:name="com.base.AtoZMaintenanceApp.Fragments.ReportFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/report">
+
+        <action
+            android:id="@+id/action_D_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
     </fragment>
 
     <fragment
@@ -97,10 +113,6 @@
 
 
     </fragment>
-
-
-
-
 
 
 </navigation>

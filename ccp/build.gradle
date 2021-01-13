@@ -1,5 +1,4 @@
 apply plugin: 'com.android.library'
-apply plugin: 'kotlin-android'
 
 ext {
     bintrayRepo = 'maven'
@@ -28,7 +27,7 @@ ext {
 
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 30
     buildToolsVersion '28.0.3'
 
     defaultConfig {
@@ -54,16 +53,12 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     testImplementation 'junit:junit:4.12'
-    implementation(project(':library'))
-
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.0.0'
     implementation('com.futuremind.recyclerfastscroll:fastscroll:0.2.5', {
         exclude group: 'com.android.support'
     })
     implementation 'io.michaelrocks:libphonenumber-android:8.9.14'
-    implementation 'com.squareup.picasso:picasso:2.71828'
-
 }
 
 

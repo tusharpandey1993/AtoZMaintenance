@@ -13,7 +13,10 @@ import com.bumptech.glide.Glide;
 
 import java.util.List;
 
-import pl.aprilapps.easyphotopicker.MediaFile;
+import com.base.AtoZMaintenanceApp.imagePicker.MediaFile;
+import com.bumptech.glide.load.DecodeFormat;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
 
 public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.ViewHolder> {
 
@@ -33,9 +36,17 @@ public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
+        RequestOptions myOptions = new RequestOptions()
+                .override(400, 400)
+                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .placeholder(R.drawable.card_bg);
+
         Glide.with(context)
+                .asBitmap()
+                .apply(myOptions)
                 .load(imagesFiles.get(position).getFile())
-                .into(holder.imageView);    }
+                .into(holder.imageView);
+    }
 
     @Override
     public int getItemCount() {

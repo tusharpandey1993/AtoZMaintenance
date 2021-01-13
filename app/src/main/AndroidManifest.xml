@@ -7,27 +7,48 @@
     <uses-permission android:name="android.permission.CALL_PHONE" />
     <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />-->
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
+        android:configChanges="orientation|screenSize|layoutDirection"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
+        android:networkSecurityConfig="@xml/network_security_config"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:hardwareAccelerated="true"
-        android:networkSecurityConfig="@xml/network_security_config"
-        android:configChanges="orientation|screenSize|layoutDirection"
-        android:largeHeap="true">
-        <activity android:name="com.base.AtoZMaintenanceApp.MainActivity"
-            android:theme="@style/AppTheme.NoActionBar"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          >
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.base.AtoZMaintenanceApp.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <provider
+            android:name="com.base.AtoZMaintenanceApp.imagePicker.EasyImageFileProvider"
+            android:authorities="${applicationId}.easyphotopicker.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/easyimage_filepaths" />
+        </provider>
+
+        <meta-data
+            android:name="android.support.FILE_PROVIDER_PATHS"
+            android:resource="@xml/easyimage_filepaths" />
+
+        <activity
+            android:name="com.base.AtoZMaintenanceApp.ReportActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

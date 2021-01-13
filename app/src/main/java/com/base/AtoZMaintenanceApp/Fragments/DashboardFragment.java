@@ -2,6 +2,7 @@ package com.base.AtoZMaintenanceApp.Fragments;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -29,6 +30,7 @@ import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogCl
 import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogPopup;
 import com.base.AtoZMaintenanceApp.MVP.IPresenter;
 import com.base.AtoZMaintenanceApp.R;
+import com.base.AtoZMaintenanceApp.ReportActivity;
 import com.yarolegovich.slidingrootnav.SlidingRootNav;
 import com.yarolegovich.slidingrootnav.callback.DragListener;
 
@@ -137,7 +139,13 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
     @Override
     public void onClick(View view, int position) {
         try {
-            Log.d(TAG, "onClick: poej " +position);
+            Log.d(TAG, "onClick: poej " +position);/*
+            Navigation.findNavController(requireActivity(), R.id.navHostFragment)
+                    .navigate(R.id.action_dashboardFrag_to_ReportFragment);
+*/
+            Intent myIntent = new Intent(mActivity, ReportActivity.class);
+            mActivity.startActivity(myIntent);
+
             switch (position) {
                 case Carpenter:
                     break;

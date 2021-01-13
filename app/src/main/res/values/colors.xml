@@ -160,7 +160,7 @@
     <color name="collapsingToolbar">#295c8f</color>
 
     <color name="lbl_device_id">#717171</color>
-    <color name="ic_launcher_background">#717171</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
 
     <color name="lightGreen">#8BC34A</color>
     <color name="button_blue">#5dabe6</color>

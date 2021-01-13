@@ -20,7 +20,7 @@ project.afterEvaluate {
 }
 
 android {
-    compileSdkVersion compile_sdk_version
+    compileSdkVersion 30
 
     defaultConfig {
         minSdkVersion min_sdk_version
