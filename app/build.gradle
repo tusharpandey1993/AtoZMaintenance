@@ -69,4 +69,5 @@ dependencies {
         exclude group: 'glide-parent'
     }
     implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
 }
