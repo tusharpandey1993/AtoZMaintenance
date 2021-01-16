@@ -112,11 +112,39 @@ public class LoginFragment extends BaseFragment implements IPresenter, GenericDi
                 checkValidation();
             }
         });
+        backButtonHandling();
 
         Log.d(TAG, "onCreateView: " + AppPreferences.getName(mActivity));
         return mView;
 
     }
+
+    private void backButtonHandling() {
+        try {
+            OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+                @Override
+                public void handleOnBackPressed() {
+                    // Handle the back button event
+                    Log.d(TAG, "handleOnBackPressed: ");
+                    GenericDialogPopup genericDialogPopup = null;
+                    GenericDialogBuilder genericDialogBuilder = new GenericDialogBuilder.Builder()
+                            .setShowCloseButton(false)
+                            .setHeading(mActivity.getResources().getString(R.string.DialogHeading))
+                            .setDescription(mActivity.getResources().getString(R.string.appExit))
+                            .setPositiveButtonText(Constants.EXIT)
+                            .setNegativeButtonText(Constants.Cancel)
+                            .setGenericDialogClickListener(LoginFragment.this)
+                            .setFucntionNumber(Constants.getInstance().exitApp)
+                            .build();
+                    Utility.getInstance().showDynamicDialog(mActivity, genericDialogBuilder, genericDialogPopup, mActivity.getSupportFragmentManager());
+                }
+            };
+            mActivity.getOnBackPressedDispatcher().addCallback(this, callback);
+        } catch (Exception e) {
+            Log.e(TAG, "backButtonHandling: exception" + e.getMessage());
+        }
+    }
+
 
     private void init(View  mView) {
         editUserName = (EditText) mView.findViewById(R.id.edit_UserName);
@@ -194,7 +222,14 @@ public class LoginFragment extends BaseFragment implements IPresenter, GenericDi
         genericDialogPopup.show(mActivity.getSupportFragmentManager(), TAG);
     }
 
-
+    @Override
+    public void onPositiveButtonClick(View view, int FucntionNumber) {
+        switch (FucntionNumber) {
+            case 800:
+                mActivity.finish();
+                break;
+        }
+    }
 
     @Override
     public void showProgressDialog() {

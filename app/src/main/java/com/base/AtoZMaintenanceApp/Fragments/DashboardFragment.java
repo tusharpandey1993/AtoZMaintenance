@@ -3,10 +3,13 @@ package com.base.AtoZMaintenanceApp.Fragments;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+
+import androidx.activity.OnBackPressedCallback;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.Lifecycle;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import android.util.Log;
@@ -16,7 +19,12 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import com.base.AtoZMaintenanceApp.Adapter.DashboardServiceListAdapter;
 import com.base.AtoZMaintenanceApp.Adapter.OnClickInterface;
+import com.base.AtoZMaintenanceApp.CommonFiles.AppPreferences;
+import com.base.AtoZMaintenanceApp.CommonFiles.Constants;
+import com.base.AtoZMaintenanceApp.CommonFiles.Utility;
+import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogBuilder;
 import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogClickListener;
+import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogPopup;
 import com.base.AtoZMaintenanceApp.MVP.IPresenter;
 import com.base.AtoZMaintenanceApp.R;
 import com.base.AtoZMaintenanceApp.ReportActivity;
@@ -36,6 +44,7 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
     public static boolean goToContactTrainer = false;
     DashboardServiceListAdapter selectedAdapter;
     private ImageView closeIcon;
+    private ImageView logout;
     RecyclerView recyclerViewList;
 
     private SlidingRootNav slidingRootNav;
@@ -49,6 +58,10 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
         super.onAttach(context);
         mActivity = getActivity();
     }
+
+
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -66,8 +79,37 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
         recyclerViewList.setLayoutManager(new GridLayoutManager(mActivity, 2));
         recyclerViewList.setAdapter(selectedAdapter);
 
+        backButtonHandling();
+
         return mView;
     }
+
+    private void backButtonHandling() {
+        try {
+            OnBackPressedCallback callback = new OnBackPressedCallback(true) {
+                @Override
+                public void handleOnBackPressed() {
+                    // Handle the back button event
+                    Log.d(TAG, "handleOnBackPressed: ");
+                    GenericDialogPopup genericDialogPopup = null;
+                    GenericDialogBuilder genericDialogBuilder = new GenericDialogBuilder.Builder()
+                            .setShowCloseButton(false)
+                            .setHeading(mActivity.getResources().getString(R.string.DialogHeading))
+                            .setDescription(mActivity.getResources().getString(R.string.appExit))
+                            .setPositiveButtonText(Constants.EXIT)
+                            .setNegativeButtonText(Constants.Cancel)
+                            .setGenericDialogClickListener(DashboardFragment.this)
+                            .setFucntionNumber(Constants.getInstance().exitApp)
+                            .build();
+                    Utility.getInstance().showDynamicDialog(mActivity, genericDialogBuilder, genericDialogPopup, mActivity.getSupportFragmentManager());
+                }
+            };
+            mActivity.getOnBackPressedDispatcher().addCallback(this, callback);
+        } catch (Exception e) {
+            Log.e(TAG, "backButtonHandling: exception" + e.getMessage());
+        }
+    }
+
 
     @NonNull
     @Override
@@ -79,6 +121,8 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
 
     private void init(View mView) {
         recyclerViewList = mView.findViewById(R.id.recyclerViewList);
+        logout = mView.findViewById(R.id.logout);
+        logout.setOnClickListener(this);
     }
 
     @Override
@@ -94,7 +138,17 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
 
                 break;
             case R.id.logout:
-
+                GenericDialogPopup genericDialogPopup = null;
+                GenericDialogBuilder genericDialogBuilder = new GenericDialogBuilder.Builder()
+                        .setShowCloseButton(false)
+                        .setHeading(mActivity.getResources().getString(R.string.logoutHeading))
+                        .setDescription(mActivity.getResources().getString(R.string.appLogout))
+                        .setPositiveButtonText(Constants.LOGOUT)
+                        .setNegativeButtonText(Constants.Cancel)
+                        .setGenericDialogClickListener(DashboardFragment.this)
+                        .setFucntionNumber(Constants.getInstance().logout)
+                        .build();
+                Utility.getInstance().showDynamicDialog(mActivity, genericDialogBuilder, genericDialogPopup, mActivity.getSupportFragmentManager());
                 break;
 
             case R.id.closeIcon:
@@ -105,6 +159,16 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
 
     @Override
     public void onPositiveButtonClick(View view, int FucntionNumber) {
+        switch (FucntionNumber) {
+            case 810:
+                AppPreferences.clear(mActivity);
+                Navigation.findNavController(requireActivity(),R.id.navHostFragment)
+                        .navigate(R.id.action_dashboardFrag_to_LoginFragment);
+                break;
+            case 800:
+                mActivity.finish();
+                break;
+        }
 
     }
 
