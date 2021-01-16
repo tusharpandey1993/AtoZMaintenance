@@ -22,8 +22,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/_20sdp">
+            android:layout_height="match_parent">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/startGuide"
@@ -99,7 +98,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
                 app:layout_constraintTop_toTopOf="@+id/recycler_view" />
 
-            <EditText
+            <TextView
                 android:id="@+id/feedback"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -124,11 +123,11 @@
                 android:layout_width="0dp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginLeft="@dimen/_8sdp"
-                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:visibility="visible"
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
                 app:layout_constraintStart_toEndOf="@+id/staffText"
-                app:layout_constraintTop_toBottomOf="@+id/feedback" />
+                app:layout_constraintTop_toBottomOf="@+id/parent3" />
 
 
             <TextView
@@ -153,7 +152,7 @@
                 android:text="What is the frequency of Service "
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/counter" />
+                app:layout_constraintTop_toBottomOf="@+id/feedback" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/parent"
@@ -266,13 +265,24 @@
             <Button
                 android:id="@+id/btn_submit"
                 style="@style/btn_login"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_30sdp"
                 android:background="@drawable/access_pack_bg_gradient"
                 android:text="@string/submit"
+                app:layout_constraintBottom_toTopOf="@+id/callNow"
+                app:layout_constraintEnd_toStartOf="@+id/endGuide"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/counter" />
+
+            <TextView
+                android:id="@+id/callNow"
+                style="@style/normal_text"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="@string/callNow"
+                android:textColor="@color/colorAccent"
                 app:layout_constraintBottom_toTopOf="@+id/exmptySpace"
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
                 app:layout_constraintStart_toStartOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/parent3" />
+                app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
 
             <View
                 android:id="@+id/exmptySpace"

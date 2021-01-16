@@ -18,6 +18,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 
+import com.base.AtoZMaintenanceApp.CommonFiles.Constants;
+
 import static com.base.AtoZMaintenanceApp.Fragments.ProfileFragment.profileImg;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     private NavController navController;
     Toolbar toolbar;
     private static final String TAG = "MainActivity";
+    private String value ="";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
         try {
             getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
             setContentView(R.layout.activity_main);
+
+            if(getIntent() != null && getIntent().getExtras() != null ) {
+                value = getIntent().getExtras().getString(Constants.getInstance().ShowSuccess);
+                Constants.getInstance().ShowSuccessFlag = true;
+            } else {
+                Constants.getInstance().ShowSuccessFlag = false;
+            }
 
             DisplayMetrics displayMetrics = new DisplayMetrics();
             getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);

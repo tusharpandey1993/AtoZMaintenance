@@ -68,6 +68,5 @@ dependencies {
     implementation ('com.github.bumptech.glide:okhttp3-integration:4.7.1'){
         exclude group: 'glide-parent'
     }
-    implementation 'com.wdullaer:materialdatetimepicker:4.2.3'
     implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
 }

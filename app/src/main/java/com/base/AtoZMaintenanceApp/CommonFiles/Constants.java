@@ -86,6 +86,9 @@ public class Constants {
     public String Unit = "Unit";
     public String EMPCode = "EMPCode";
     public String FilterList = "FilterList";
+    public String ShowSuccess = "show success";
+    public String True = "true";
+    public boolean ShowSuccessFlag = false;
 
     public static String itemName = "";
     public static int imageName;

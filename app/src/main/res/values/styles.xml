@@ -243,8 +243,8 @@
     <style name="hint_text">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textColor">@color/textcardColor</item>
-        <item name="android:textSize">@dimen/_11ssp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
         <item name="android:fontFamily">@font/open_sans_light</item>
     </style>
 

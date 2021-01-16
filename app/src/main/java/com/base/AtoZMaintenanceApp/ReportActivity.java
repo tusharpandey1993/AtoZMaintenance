@@ -4,9 +4,12 @@ import android.Manifest;
 import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -22,6 +25,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.base.AtoZMaintenanceApp.Adapter.ImagesAdapter;
 import com.base.AtoZMaintenanceApp.CommonFiles.Constants;
+import com.base.AtoZMaintenanceApp.CommonFiles.Utility;
 import com.base.AtoZMaintenanceApp.imagePicker.ChooserType;
 import com.base.AtoZMaintenanceApp.imagePicker.DefaultCallback;
 import com.base.AtoZMaintenanceApp.imagePicker.EasyImage;
@@ -33,7 +37,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 
-public class ReportActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, com.wdullaer.materialdatetimepicker.date.DatePickerDialog.OnDateSetListener, View.OnClickListener {
+public class ReportActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, View.OnClickListener {
 
     private static final String TAG = "ReportActivity";
     private static final String PHOTOS_KEY = "easy_image_photos_list";
@@ -44,20 +48,15 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
     private static final int DOCUMENTS_REQUEST_CODE = 7503;
 
     protected RecyclerView recyclerView;
-
     protected View galleryButton;
-
     private ImagesAdapter imagesAdapter;
-
     private ArrayList<MediaFile> photos = new ArrayList<>();
-
     private EasyImage easyImage;
-    TextView toolBarText;
-    ImageView backIcon;
-    EditText feedback;
-    com.wdullaer.materialdatetimepicker.date.DatePickerDialog mdatePickerDialog;
-    private ImageView profileImg;
+    private TextView toolBarText, feedback, callNow;
+    private ImageView profileImg, backIcon;
     private ConstraintLayout parent, parent2, parent3, parent4;
+    private int mYear, mMonth, mDay;
+    private Button btn_submit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +78,6 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         recyclerView.setAdapter(imagesAdapter);
 
 
-
         easyImage = new EasyImage.Builder(this)
                 .setChooserTitle("Pick media")
                 .setCopyImagesToPublicGalleryFolder(false)
@@ -90,7 +88,6 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
                 .build();
 
         checkGalleryAppAvailability();
-
 
 
         findViewById(R.id.chooser_button).setOnClickListener(new View.OnClickListener() {
@@ -108,11 +105,39 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         findViewById(R.id.feedback).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                showDatePopUp();
+                pickDOB();
             }
         });
 
     }
+
+    private void pickDOB() {
+        try {
+            final Calendar calendar = Calendar.getInstance();
+            mYear = calendar.get(Calendar.YEAR);
+            mMonth = calendar.get(Calendar.MONTH);
+            mDay = calendar.get(Calendar.DAY_OF_MONTH);
+
+            DatePickerDialog datePickerDialog = new DatePickerDialog(this,
+                    new DatePickerDialog.OnDateSetListener() {
+                        @Override
+                        public void onDateSet(DatePicker view, int year,
+                                              int monthOfYear, int dayOfMonth) {
+                            monthOfYear++;
+                            String dob = year + "-" + monthOfYear + "-" + dayOfMonth;
+                            feedback.setText(Utility.getInstance().getDobDDMMMYYYY(dob));
+                            monthOfYear++;
+                        }
+                    }, mYear, mMonth, mDay);
+
+            datePickerDialog.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
+    }
+
 
     private void init() {
         profileImg = findViewById(R.id.profileImg);
@@ -124,11 +149,15 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         parent3 = findViewById(R.id.parent3);
         parent4 = findViewById(R.id.parent4);
         feedback = findViewById(R.id.feedback);
+        callNow = findViewById(R.id.callNow);
+        btn_submit = findViewById(R.id.btn_submit);
 
         parent.setOnClickListener(this::onClick);
         parent2.setOnClickListener(this::onClick);
         parent3.setOnClickListener(this::onClick);
         parent4.setOnClickListener(this::onClick);
+        callNow.setOnClickListener(this::onClick);
+        btn_submit.setOnClickListener(this::onClick);
 
         profileImg.setImageResource(Constants.getInstance().imageName);
         toolBarText.setText(Constants.getInstance().itemName);
@@ -215,27 +244,6 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
 
     }
 
-    public void showDatePopUp() {
-        Calendar now = Calendar.getInstance();
-
-        com.wdullaer.materialdatetimepicker.date.DatePickerDialog dpd = com.wdullaer.materialdatetimepicker.date.DatePickerDialog.newInstance(
-                ReportActivity.this,
-                now.get(Calendar.YEAR), // Initial year selection
-                now.get(Calendar.MONTH), // Initial month selection
-                now.get(Calendar.DAY_OF_MONTH) // Inital day selection
-        );
-// If you're calling this from a support Fragment
-        dpd.show(getSupportFragmentManager(), "Datepickerdialog");
-    }
-
-    @Override
-    public void onDateSet(com.wdullaer.materialdatetimepicker.date.DatePickerDialog datePickerDialog, int year, int monthOfYear, int dayOfMonth) {
-        mdatePickerDialog = datePickerDialog;
-        Log.d(TAG, "onDateSet: " + year + monthOfYear + dayOfMonth );
-        int actualMonth = monthOfYear;
-        feedback.setText(dayOfMonth + " - " +  actualMonth+1 + " - " + year);
-
-    }
 
     @Override
     public void onClick(View view) {
@@ -247,7 +255,7 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
                 parent4.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
                 break;
             case R.id.parent2:
-                parent.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
+                parent.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
                 parent2.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
                 parent3.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
                 parent4.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
@@ -264,10 +272,21 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
                 parent3.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
                 parent4.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
                 break;
-                case R.id.backIcon:
-                    finish();
+            case R.id.backIcon:
+                finish();
                 break;
-
+            case R.id.btn_submit:
+                Intent intent = new Intent(ReportActivity.this,MainActivity.class);
+                Bundle bundle = new Bundle();
+                bundle.putString(Constants.getInstance().ShowSuccess, Constants.getInstance().True);
+                intent.putExtras(bundle);
+                startActivity(intent);
+                break;
+            case R.id.callNow:
+                Intent intent2 = new Intent(Intent.ACTION_DIAL);
+                intent2.setData(Uri.parse("tel:0123456789"));
+                startActivity(intent2);
+                break;
         }
     }
 }

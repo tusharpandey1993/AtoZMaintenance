@@ -5,14 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_140sdp"
+    android:layout_height="@dimen/_130sdp"
     android:layout_margin="@dimen/_10sdp"
     android:background="@drawable/round_bg">
 
     <ImageView
         android:id="@+id/item_icon"
-        android:layout_width="@dimen/_40sdp"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_38sdp"
         android:layout_marginTop="@dimen/_25sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,7 +22,7 @@
         android:id="@+id/title"
         style="@style/sub_heading_text"
         android:layout_width="wrap_content"
-        android:textSize="@dimen/_17ssp"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginStart="@dimen/_10sdp"
         android:layout_marginEnd="@dimen/_10sdp"
