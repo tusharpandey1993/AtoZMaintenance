@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -53,6 +54,7 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
     private EasyImage easyImage;
     TextView toolBarText;
     ImageView backIcon;
+    EditText feedback;
     com.wdullaer.materialdatetimepicker.date.DatePickerDialog mdatePickerDialog;
     private ImageView profileImg;
     private ConstraintLayout parent, parent2, parent3, parent4;
@@ -120,6 +122,7 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         parent2 = findViewById(R.id.parent2);
         parent3 = findViewById(R.id.parent3);
         parent4 = findViewById(R.id.parent4);
+        feedback = findViewById(R.id.feedback);
 
         parent.setOnClickListener(this::onClick);
         parent2.setOnClickListener(this::onClick);
@@ -228,6 +231,8 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
     public void onDateSet(com.wdullaer.materialdatetimepicker.date.DatePickerDialog datePickerDialog, int year, int monthOfYear, int dayOfMonth) {
         mdatePickerDialog = datePickerDialog;
         Log.d(TAG, "onDateSet: " + year + monthOfYear + dayOfMonth );
+        int actualMonth = monthOfYear;
+        feedback.setText(dayOfMonth + " - " +  actualMonth+1 + " - " + year);
 
     }
 
@@ -241,7 +246,7 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
                 parent4.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
                 break;
             case R.id.parent2:
-                parent.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
                 parent2.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
                 parent3.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
                 parent4.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
