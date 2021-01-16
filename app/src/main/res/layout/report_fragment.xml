@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -16,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@android:color/white"
+        android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include2">
@@ -39,12 +39,11 @@
                 android:orientation="vertical"
                 app:layout_constraintGuide_percent="0.94" />
 
-
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_100sdp"
-                android:src="@drawable/main_bg_gradient"
+                android:layout_height="@dimen/_250sdp"
+                android:src="@drawable/report_bg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -56,9 +55,29 @@
                 android:layout_marginTop="28dp"
                 android:src="@drawable/ic_water_tank_cleaning"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.458"
                 app:layout_constraintStart_toStartOf="@+id/startGuide"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/imageHint"
+                style="@style/hint_text"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:text="@string/uploadImage"
+                app:layout_constraintStart_toEndOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/profileImg" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_weight="1"
+                android:background="@color/coustom_white"
+                android:gravity="center"
+                app:layout_constraintEnd_toEndOf="@+id/endGuide"
+                app:layout_constraintStart_toEndOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/imageHint" />
 
             <TextView
                 android:id="@+id/feedbackHint"
@@ -69,25 +88,11 @@
                 app:layout_constraintStart_toStartOf="@+id/startGuide"
                 app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
 
-
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/recycler_view"
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_200sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:layout_weight="1"
-                android:background="@color/coustom_white"
-                android:gravity="center"
-                app:layout_constraintEnd_toEndOf="@+id/endGuide"
-                app:layout_constraintStart_toEndOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-
             <ImageView
                 android:id="@+id/chooser_button"
                 android:layout_width="@dimen/_60sdp"
                 android:layout_height="@dimen/_60sdp"
-                android:layout_marginTop="@dimen/_180sdp"
+                android:layout_marginTop="@dimen/_18sdp"
                 android:padding="@dimen/_15sdp"
                 android:src="@drawable/ic_upload"
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
@@ -114,75 +119,148 @@
 
 
             <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:id="@+id/counter"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_50sdp"
-                app:layout_constraintBottom_toTopOf="@+id/suggestion"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginLeft="@dimen/_8sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:visibility="visible"
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
-                app:layout_constraintStart_toStartOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/recycler_view" />
-
-            <TextView
-                android:id="@+id/suggestionHint"
-                style="@style/hint_text"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:text="@string/suggestionHint"
-                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintStart_toEndOf="@+id/staffText"
                 app:layout_constraintTop_toBottomOf="@+id/feedback" />
 
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/suggestion"
-                android:layout_width="0dp"
+            <TextView
+                android:id="@+id/staffText"
+                style="@style/normal_text"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/feedback_bg"
-                android:enabled="false"
-                android:fontFamily="@font/open_sans_semibold"
-                android:gravity="start"
-                android:hint=""
-                android:imeOptions="actionNext"
-                android:maxLength="200"
-                android:maxLines="3"
-                android:minLines="4"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/toolbar_title_color"
-                android:textSize="@dimen/_12ssp"
-                app:layout_constraintEnd_toEndOf="@+id/endGuide"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/suggestionHint" />
+                android:drawableLeft="@drawable/ic_user"
+                android:text=" Staff Numbers "
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@+id/counter"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toTopOf="@+id/counter" />
+
 
             <TextView
-                android:id="@+id/suggestionHint"
+                android:id="@+id/freqText"
                 style="@style/hint_text"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:text="@string/suggestionHint"
-                app:layout_constraintStart_toStartOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/feedback" />
-
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/suggestion"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:background="@drawable/feedback_bg"
-                android:enabled="false"
-                android:fontFamily="@font/open_sans_semibold"
-                android:gravity="start"
-                android:hint=""
-                android:imeOptions="actionNext"
-                android:maxLength="200"
-                android:maxLines="3"
-                android:minLines="4"
-                android:padding="@dimen/_4sdp"
-                android:textColor="@color/toolbar_title_color"
-                android:textSize="@dimen/_12ssp"
-                app:layout_constraintEnd_toEndOf="@+id/endGuide"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/suggestionHint" />
+                android:layout_marginTop="@dimen/_15sdp"
+                android:text="What is the frequency of Service "
+                android:textColor="@color/black"
+                app:layout_constraintStart_toStartOf="@+id/startGuide"
+                app:layout_constraintTop_toBottomOf="@+id/counter" />
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/parent"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/card_bg"
+                app:layout_constraintEnd_toStartOf="@+id/parent2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/freqText">
+
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Weekly"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/parent2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/card_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/parent"
+                app:layout_constraintTop_toBottomOf="@+id/freqText">
+
+
+                <TextView
+                    android:id="@+id/title2"
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Monthly"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/parent3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/card_bg"
+                app:layout_constraintEnd_toStartOf="@+id/parent4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/parent">
+
+
+                <TextView
+                    android:id="@+id/title3"
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Quaterly"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/parent4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_margin="@dimen/_20sdp"
+                android:background="@drawable/card_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/parent3"
+                app:layout_constraintTop_toBottomOf="@+id/parent2">
+
+
+                <TextView
+                    android:id="@+id/title4"
+                    style="@style/normal_text"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:text="Anually"
+                    android:textSize="@dimen/_12ssp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <Button
                 android:id="@+id/btn_submit"
@@ -190,11 +268,10 @@
                 android:layout_marginTop="@dimen/_20sdp"
                 android:background="@drawable/access_pack_bg_gradient"
                 android:text="@string/submit"
-                android:visibility="gone"
+                app:layout_constraintBottom_toTopOf="@+id/exmptySpace"
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
-                app:layout_constraintHorizontal_bias="0.49"
                 app:layout_constraintStart_toStartOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/suggestion" />
+                app:layout_constraintTop_toBottomOf="@+id/parent3" />
 
             <View
                 android:id="@+id/exmptySpace"
@@ -202,8 +279,7 @@
                 android:layout_height="@dimen/_10sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
-                app:layout_constraintStart_toStartOf="@+id/startGuide"
-                app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
+                app:layout_constraintStart_toStartOf="@+id/startGuide"/>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>

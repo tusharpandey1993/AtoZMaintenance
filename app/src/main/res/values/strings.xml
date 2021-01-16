@@ -193,6 +193,7 @@
     <string name="age">Age</string>
     <string name="doJoining">Date of joining</string>
     <string name="feedback">Issue Since</string>
+    <string name="uploadImage">Upload Image</string>
     <string name="suggestionHint">Work Detail</string>
     <string name="suggestionByHint">Suggestion By</string>
     <string name="FeedbackOn">Feedback On</string>
@@ -242,4 +243,5 @@
     <string name="error_invalid_name">"Please enter Name"</string>
     <string name="error_invalid_email_empty">Email address cannot be empty</string>
     <string name="error_invalid_mobilenumber">Please enter a valid number.</string>
+    <string name="need">need?</string>
 </resources>

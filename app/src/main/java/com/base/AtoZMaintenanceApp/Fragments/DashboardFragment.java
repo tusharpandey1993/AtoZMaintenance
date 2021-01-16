@@ -1,33 +1,22 @@
 package com.base.AtoZMaintenanceApp.Fragments;
 
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.lifecycle.Lifecycle;
-import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-
 import com.base.AtoZMaintenanceApp.Adapter.DashboardServiceListAdapter;
 import com.base.AtoZMaintenanceApp.Adapter.OnClickInterface;
-import com.base.AtoZMaintenanceApp.CommonFiles.Constants;
-import com.base.AtoZMaintenanceApp.CommonFiles.AppPreferences;
-import com.base.AtoZMaintenanceApp.CommonFiles.Utility;
-import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogBuilder;
 import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogClickListener;
-import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogPopup;
 import com.base.AtoZMaintenanceApp.MVP.IPresenter;
 import com.base.AtoZMaintenanceApp.R;
 import com.base.AtoZMaintenanceApp.ReportActivity;
@@ -171,14 +160,6 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
         Fragment navHostFragment = mActivity.getSupportFragmentManager().findFragmentById(R.id.navHostFragment);
         Fragment fragment = navHostFragment.getChildFragmentManager().getFragments().get(0);
         if (fragment != null && !(fragment instanceof DashboardFragment)) {
-           /* slidingRootNav = new SlidingRootNavBuilder(mActivity)
-                    .withMenuOpened(false)
-                    .addDragListener(this)
-                    .withGravity(SlideGravity.LEFT)
-                    .withContentClickableWhenMenuOpened(true)
-                    .withMenuLayout(R.layout.menu_left_drawer)
-                    .withMenuLocked(true)
-                    .inject();*/
         }
     }
 

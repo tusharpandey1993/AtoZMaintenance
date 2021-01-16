@@ -13,8 +13,8 @@
         android:layout_height="@dimen/_150sdp"
         android:layout_alignParentBottom="true"
         android:scaleType="centerCrop"
-        android:layout_marginTop="@dimen/_100sdp"
         android:src="@drawable/logo_new"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

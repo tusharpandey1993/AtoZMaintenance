@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.base.AtoZMaintenanceApp.CommonFiles.Constants;
 import com.base.AtoZMaintenanceApp.R;
 
 public class DashboardServiceListAdapter extends RecyclerView.Adapter<DashboardServiceListAdapter.MyViewHolder> {
@@ -50,6 +51,8 @@ public class DashboardServiceListAdapter extends RecyclerView.Adapter<DashboardS
                 holder.parent.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        Constants.getInstance().itemName = ta2[position];
+                        Constants.getInstance().imageName = ta.getResourceId(position, 0);
                         onClickListner.onClick(v, position);
                     }
                 });
@@ -61,7 +64,7 @@ public class DashboardServiceListAdapter extends RecyclerView.Adapter<DashboardS
 
     @Override
     public int getItemCount() {
-          return 16;
+          return 6;
     }
 
 

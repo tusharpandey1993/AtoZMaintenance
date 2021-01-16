@@ -19,12 +19,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.base.AtoZMaintenanceApp.Adapter.ImagesAdapter;
+import com.base.AtoZMaintenanceApp.CommonFiles.Constants;
 import com.base.AtoZMaintenanceApp.imagePicker.ChooserType;
 import com.base.AtoZMaintenanceApp.imagePicker.DefaultCallback;
 import com.base.AtoZMaintenanceApp.imagePicker.EasyImage;
 import com.base.AtoZMaintenanceApp.imagePicker.MediaFile;
 import com.base.AtoZMaintenanceApp.imagePicker.MediaSource;
 
+import java.security.PrivateKey;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -51,6 +53,7 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
     TextView toolBarText;
     ImageView backIcon;
     com.wdullaer.materialdatetimepicker.date.DatePickerDialog mdatePickerDialog;
+    private ImageView profileImg;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +61,8 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         setContentView(R.layout.report_fragment);
 
         recyclerView = findViewById(R.id.recycler_view);
+
+        init();
 
 
         if (savedInstanceState != null) {
@@ -70,9 +75,6 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         recyclerView.setAdapter(imagesAdapter);
 
 
-        toolBarText = findViewById(R.id.toolBarText);
-        toolBarText.setText("Send Request");
-        backIcon = findViewById(R.id.backIcon);
 
         easyImage = new EasyImage.Builder(this)
                 .setChooserTitle("Pick media")
@@ -105,6 +107,16 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
                 showDatePopUp();
             }
         });
+
+    }
+
+    private void init() {
+        profileImg = findViewById(R.id.profileImg);
+        toolBarText = findViewById(R.id.toolBarText);
+        backIcon = findViewById(R.id.backIcon);
+
+        profileImg.setImageResource(Constants.getInstance().imageName);
+        toolBarText.setText(Constants.getInstance().itemName);
 
     }
 
