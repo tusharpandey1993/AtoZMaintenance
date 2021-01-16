@@ -79,6 +79,10 @@
             android:id="@+id/action_RegisterFragment_to_successFragment"
             app:destination="@id/SuccessFragment" />
 
+        <action
+            android:id="@+id/action_RegisterFragment_to_LoginFrag"
+            app:destination="@id/LoginFragment" />
+
     </fragment>
 
     <fragment

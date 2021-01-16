@@ -118,6 +118,7 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         profileImg = findViewById(R.id.profileImg);
         toolBarText = findViewById(R.id.toolBarText);
         backIcon = findViewById(R.id.backIcon);
+        backIcon.setOnClickListener(this);
         parent = findViewById(R.id.parent);
         parent2 = findViewById(R.id.parent2);
         parent3 = findViewById(R.id.parent3);
@@ -262,6 +263,9 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
                 parent2.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
                 parent3.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
                 parent4.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
+                break;
+                case R.id.backIcon:
+                    finish();
                 break;
 
         }

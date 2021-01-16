@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -27,7 +28,8 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
     private Button btnRegister;
     private EditText editMobileNumber, editEmail, editName;
     private ConstraintLayout layoutAlreadyAccount;
-    private TextView txt_privacy_policy;
+    private TextView txt_privacy_policy,toolBarText;
+    private ImageView backIcon;
 
     //    private ImageView CancelImg ;
     String strName = "", strEmail = "", strMobileNumber = "";
@@ -54,7 +56,11 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
         btnRegister.setOnClickListener(this);
         layoutAlreadyAccount.setOnClickListener(this);
         txt_privacy_policy = (TextView) mView.findViewById(R.id.txt_privacy_policy);
+        toolBarText = (TextView) mView.findViewById(R.id.toolBarText);
+        backIcon = mView.findViewById(R.id.backIcon);
+        toolBarText.setText("Register");
         txt_privacy_policy.setOnClickListener(this);
+        backIcon.setOnClickListener(this);
 
 
         return mView;
@@ -202,6 +208,11 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
 
             case R.id.txt_privacy_policy:
 
+                break;
+
+                case R.id.backIcon:
+                    Navigation.findNavController(requireActivity(),R.id.navHostFragment)
+                            .navigate(R.id.action_RegisterFragment_to_LoginFrag);
                 break;
 
         }
