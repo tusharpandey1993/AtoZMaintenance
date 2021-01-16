@@ -42,11 +42,12 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_250sdp"
+                android:layout_height="0dp"
                 android:src="@drawable/report_bg"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
 
             <ImageView
                 android:id="@+id/profileImg"
@@ -70,7 +71,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recycler_view"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_20sdp"
+                android:layout_height="@dimen/_200sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_weight="1"
                 android:background="@color/coustom_white"
@@ -92,7 +93,7 @@
                 android:id="@+id/chooser_button"
                 android:layout_width="@dimen/_60sdp"
                 android:layout_height="@dimen/_60sdp"
-                android:layout_marginTop="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_180sdp"
                 android:padding="@dimen/_15sdp"
                 android:src="@drawable/ic_upload"
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
@@ -102,7 +103,7 @@
                 android:id="@+id/feedback"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:background="@drawable/feedback_bg"
                 android:fontFamily="@font/open_sans_semibold"
                 android:gravity="start"
@@ -148,7 +149,7 @@
                 style="@style/hint_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:text="What is the frequency of Service "
                 android:textColor="@color/black"
                 app:layout_constraintStart_toStartOf="@+id/startGuide"
@@ -279,11 +280,10 @@
                 android:layout_height="@dimen/_10sdp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/endGuide"
-                app:layout_constraintStart_toStartOf="@+id/startGuide"/>
+                app:layout_constraintStart_toStartOf="@+id/startGuide" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </androidx.core.widget.NestedScrollView>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 

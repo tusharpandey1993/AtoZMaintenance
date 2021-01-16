@@ -13,6 +13,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -31,7 +32,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 
-public class ReportActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, com.wdullaer.materialdatetimepicker.date.DatePickerDialog.OnDateSetListener {
+public class ReportActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener, com.wdullaer.materialdatetimepicker.date.DatePickerDialog.OnDateSetListener, View.OnClickListener {
 
     private static final String TAG = "ReportActivity";
     private static final String PHOTOS_KEY = "easy_image_photos_list";
@@ -54,6 +55,7 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
     ImageView backIcon;
     com.wdullaer.materialdatetimepicker.date.DatePickerDialog mdatePickerDialog;
     private ImageView profileImg;
+    private ConstraintLayout parent, parent2, parent3, parent4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -114,6 +116,15 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         profileImg = findViewById(R.id.profileImg);
         toolBarText = findViewById(R.id.toolBarText);
         backIcon = findViewById(R.id.backIcon);
+        parent = findViewById(R.id.parent);
+        parent2 = findViewById(R.id.parent2);
+        parent3 = findViewById(R.id.parent3);
+        parent4 = findViewById(R.id.parent4);
+
+        parent.setOnClickListener(this::onClick);
+        parent2.setOnClickListener(this::onClick);
+        parent3.setOnClickListener(this::onClick);
+        parent4.setOnClickListener(this::onClick);
 
         profileImg.setImageResource(Constants.getInstance().imageName);
         toolBarText.setText(Constants.getInstance().itemName);
@@ -218,5 +229,36 @@ public class ReportActivity extends AppCompatActivity implements DatePickerDialo
         mdatePickerDialog = datePickerDialog;
         Log.d(TAG, "onDateSet: " + year + monthOfYear + dayOfMonth );
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()) {
+            case R.id.parent:
+                parent.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
+                parent2.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent3.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent4.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                break;
+            case R.id.parent2:
+                parent.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent2.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
+                parent3.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent4.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                break;
+            case R.id.parent3:
+                parent.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent2.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent3.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
+                parent4.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                break;
+            case R.id.parent4:
+                parent.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent2.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent3.setBackground(this.getResources().getDrawable(R.drawable.card_bg));
+                parent4.setBackground(this.getResources().getDrawable(R.drawable.text_bg));
+                break;
+
+        }
     }
 }
