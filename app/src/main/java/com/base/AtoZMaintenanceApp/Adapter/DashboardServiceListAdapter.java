@@ -64,7 +64,7 @@ public class DashboardServiceListAdapter extends RecyclerView.Adapter<DashboardS
 
     @Override
     public int getItemCount() {
-          return 6;
+          return 8;
     }
 
 
