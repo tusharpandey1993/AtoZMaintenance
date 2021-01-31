@@ -60,6 +60,7 @@ public class LoginFragment extends BaseFragment implements IPresenter, GenericDi
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+        Utility.getInstance().setApplicationLocale("hi",mActivity);
         mView = inflater.inflate(R.layout.fragment_login, container, false);
 
         init(mView);

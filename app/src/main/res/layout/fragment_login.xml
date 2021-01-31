@@ -201,7 +201,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/open_sans_semibold"
-                android:text="Register here"
+                android:text="@string/registerText"
                 android:textColor="#771D32"
                 android:textSize="@dimen/_13ssp"
                 android:layout_marginLeft="@dimen/_5sdp"

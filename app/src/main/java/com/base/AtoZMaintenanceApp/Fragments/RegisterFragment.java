@@ -46,7 +46,7 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
+        Utility.getInstance().setApplicationLocale("hi",mActivity);
         mView = inflater.inflate(R.layout.fragment_register, container, false);
         editMobileNumber = (EditText) mView.findViewById(R.id.edit_mobile_number);
         editEmail = (EditText) mView.findViewById(R.id.edit_email);
