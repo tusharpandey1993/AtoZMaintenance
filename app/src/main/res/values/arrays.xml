@@ -49,10 +49,12 @@
     <string-array name="homeItems">
         <item>Carpenter</item>
         <item>Painting</item>
-        <item>Gardaning</item>
+        <item>Gardening</item>
         <item>Plumbing</item>
         <item>Civil</item>
-        <item>Water Tank Cleaning</item>=
+        <item>Water Tank Cleaning</item>
+        <item>Fabrication</item>
+        <item>Electric Work</item>
     </string-array>
 
 
@@ -63,6 +65,8 @@
         <item>@drawable/ic_plumbing</item>
         <item>@drawable/ic_civil</item>
         <item>@drawable/ic_water_tank_cleaning</item>
+        <item>@drawable/ic_welder</item>
+        <item>@drawable/ic_electricity</item>
     </array>
 
 

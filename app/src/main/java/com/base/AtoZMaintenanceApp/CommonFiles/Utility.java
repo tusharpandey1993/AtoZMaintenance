@@ -11,6 +11,7 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.util.DisplayMetrics;
+import android.text.TextUtils;
 import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
@@ -29,7 +30,10 @@ import com.base.AtoZMaintenanceApp.CustomViewsFiles.genericPopUp.GenericDialogPo
 import com.base.AtoZMaintenanceApp.R;
 import com.base.AtoZMaintenanceApp.api.Service;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
@@ -270,5 +274,69 @@ public class Utility {
     }
 
 
+
+    public String getDobDDMMMYYYY(String dob){
+        String strDOB="";
+        try {
+            SimpleDateFormat format1 = new SimpleDateFormat("yyyy-MM-dd");
+//            SimpleDateFormat format2 = new SimpleDateFormat("dd MMM yyyy");
+            SimpleDateFormat format2 = new SimpleDateFormat("dd-MM-yyyy");
+            Date date = format1.parse(dob);
+            strDOB=format2.format(date);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+
+        return strDOB;
+    }
+
+    public static int getCurrentAge(String age) {
+
+        int returnAge = 0;
+
+        if (!TextUtils.isEmpty(age)) {
+
+            String yearAge = age.substring(0, age.indexOf("-"));
+            String montnAge = age.substring(age.indexOf("-") + 1, age.lastIndexOf("-"));
+            String dayAge = age.substring(age.lastIndexOf("-") + 1, age.length());
+
+            Calendar c = Calendar.getInstance();
+            int currentDay = c.get(Calendar.DAY_OF_MONTH);
+            int currentMonth = c.get(Calendar.MONTH) + 1;
+            int currentYear = c.get(Calendar.YEAR);
+
+            int dayOfAge = 0;
+            int monthOfAge = 0;
+            int yearOfAge = 0;
+
+            try {
+                dayOfAge = Integer.parseInt(dayAge);
+                monthOfAge = Integer.parseInt(montnAge);
+                yearOfAge = Integer.parseInt(yearAge);
+
+            } catch (NumberFormatException e) {
+                e.printStackTrace();
+            }
+
+
+            if (monthOfAge > currentMonth && yearOfAge != currentYear) {
+                returnAge = ((currentYear - yearOfAge) - 1);
+
+            } else if (currentMonth == monthOfAge && yearOfAge != currentYear) {
+                if (dayOfAge < currentDay) {
+                    returnAge = (currentYear - yearOfAge);
+                } else if (dayOfAge == currentDay) {
+                    returnAge = (currentYear - yearOfAge);
+                } else {
+                    returnAge = (currentYear - yearOfAge) - 1;
+                }
+            } else if (monthOfAge < currentMonth && yearOfAge != currentYear) {
+                returnAge = (currentYear - yearOfAge);
+            }
+        }
+
+        return returnAge;
+    }
 
 }

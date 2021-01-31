@@ -16,6 +16,10 @@
         <action
             android:id="@+id/action_splashFragment_to_dashboardFragment"
             app:destination="@id/DashboardFragment" />
+
+        <action
+            android:id="@+id/action_splashFragment_to_successFragment"
+            app:destination="@id/SuccessFragment" />
     </fragment>
 
     <fragment

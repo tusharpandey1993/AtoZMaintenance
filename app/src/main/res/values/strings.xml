@@ -53,6 +53,7 @@
     //Buttons
     <string name="continueBtnLogin">Continue</string>
     <string name="submit">Submit</string>
+    <string name="callNow">Call Now</string>
 
 
     // Assessment
@@ -192,7 +193,7 @@
     <string name="dob">Date of birth</string>
     <string name="age">Age</string>
     <string name="doJoining">Date of joining</string>
-    <string name="feedback">Issue Since</string>
+    <string name="feedback">Issue since</string>
     <string name="uploadImage">Upload Image</string>
     <string name="suggestionHint">Work Detail</string>
     <string name="suggestionByHint">Suggestion By</string>
@@ -217,6 +218,7 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="previous">Previous</string>
 
+    <string name="lbl_select_dob">DD-MM-YYYY</string>
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
 

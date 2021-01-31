@@ -38,25 +38,33 @@ public class SplashFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         mView = inflater.inflate(R.layout.splash_activty, container, false);
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                if(AppPreferences.getIsShowedShowcaseAppStore(mActivity)) {
-                    if (AppPreferences.isLoggedIn(mActivity)) {
-                        Log.d(TAG, "run: true ");
-                        Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                                .navigate(R.id.action_splashFragment_to_dashboardFragment);
-                    } else {
-                        Log.d(TAG, "run: false");
-                        Navigation.findNavController(requireActivity(), R.id.navHostFragment)
-                                .navigate(R.id.action_splashFragment_to_loginFragment);
-                    }
-                }else {
-                    showOnBoarding();
-                }
 
-            }
-        },ANIMATE_DURATION);
+        if(Constants.getInstance().ShowSuccessFlag) {
+            Log.d(TAG, "onCreateView1: " + Constants.getInstance().ShowSuccessFlag);
+            Navigation.findNavController(requireActivity(), R.id.navHostFragment)
+                    .navigate(R.id.action_splashFragment_to_successFragment);
+        } else {
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    if(AppPreferences.getIsShowedShowcaseAppStore(mActivity)) {
+                        if (AppPreferences.isLoggedIn(mActivity)) {
+                            Log.d(TAG, "run: true ");
+                            Navigation.findNavController(requireActivity(), R.id.navHostFragment)
+                                    .navigate(R.id.action_splashFragment_to_dashboardFragment);
+                        } else {
+                            Log.d(TAG, "run: false");
+                            Navigation.findNavController(requireActivity(), R.id.navHostFragment)
+                                    .navigate(R.id.action_splashFragment_to_loginFragment);
+                        }
+                    }else {
+                        showOnBoarding();
+                    }
+
+                }
+            },ANIMATE_DURATION);
+        }
+
 
         return mView;
 
