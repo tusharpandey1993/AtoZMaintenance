@@ -44,7 +44,7 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
     public static boolean goToContactTrainer = false;
     DashboardServiceListAdapter selectedAdapter;
     private ImageView closeIcon;
-    private ImageView logout;
+    private ImageView logout,btnLanguage;
     RecyclerView recyclerViewList;
 
     private SlidingRootNav slidingRootNav;
@@ -122,7 +122,9 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
     private void init(View mView) {
         recyclerViewList = mView.findViewById(R.id.recyclerViewList);
         logout = mView.findViewById(R.id.logout);
-        logout.setOnClickListener(this);
+        logout = mView.findViewById(R.id.btnLanguage);
+        btnLanguage.setOnClickListener(this);
+        btnLanguage.setOnClickListener(this);
     }
 
     @Override
@@ -152,6 +154,10 @@ public class DashboardFragment extends BaseFragment implements GenericDialogClic
                 break;
 
             case R.id.closeIcon:
+                break;
+
+                case R.id.btnLanguage:
+
                 break;
         }
     }

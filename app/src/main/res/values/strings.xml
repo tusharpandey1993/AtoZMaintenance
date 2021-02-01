@@ -1,17 +1,61 @@
 <resources>
+
+    <!--    App level Strings -->
     <string name="app_name">AtoZMaintenanceApp</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
+    <!--   Login page Strings -->
     <string name="welcome_login">Welcome</string>
-
     <string name="infoTxtViewLogin">Enter your account details to get started.</string>
-    <string name="registerText">Register Here</string>
-
-
     <string name="MobEmailTxtViewReg">UserName</string>
     <string name="Password">Password</string>
     <string name="MobileNoHintRegOnLogin">Enter Password</string>
     <string name="UserNameHintRegOnLogin">Enter UserName</string>
+    <string name="continueBtnLogin">Continue</string>
+    <string name="new_user_txt">New User??</string>
+    <string name="registerText">Register Here</string>
+
+    <!--    Register page Strings-->
+    <string name="titleRegister">App will recognize you as the user and sync its data with this account.</string>
+    <string name="NameTxtViewReg">COMPANY\’S  NAME</string>
+    <string name="EmailTxtViewReg">COMPANY\’S EMAIL ADDRESS</string>
+    <string name="MobTxtViewReg">COMPANY\’S MOBILE NUMBER</string>
+    <string name="BtnTxtViewReg">Submit</string>
+    <string name="NameHintReg">Enter Name</string>
+    <string name="EmailHintReg">Enter Valid Email</string>
+    <string name="alreadyRegistered">Already have an account?</string>
+    <string name="RegisterLogin">Log In</string>
+    <string name="MobileNoHintReg">Enter Mobile Number</string>
+    <string name="error_invalid_name">Please enter Name</string>
+    <string name="error_invalid_email_empty">Email address cannot be empty</string>
+    <string name="error_invalid_mobilenumber">Please enter a valid number.</string>
+    <string name="error_invalid_email">Please enter valid email address</string>
+    <string name="error_mobilenumberZero">"Mobile number cannot begin with a '0'."</string>
+
+<!--    Dashboard Page Strings-->
+    <string name="which_service_txt">Which Service \ndo you</string>
+    <string name="need">need?</string>
+    <string name="Carpenter_txt">Carpenter</string>
+    <string name="Painting_txt">Painting</string>
+    <string name="Gardening_txt">Gardening</string>
+    <string name="Plumbing_txt">Plumbing</string>
+    <string name="Civil_txt">Civil</string>
+    <string name="Water_Tank_Cleaning_txt">Water Tank Cleaning</string>
+    <string name="Fabrication_txt">Fabrication</string>
+    <string name="Electric_Work_txt">Electric Work</string>
+
+<!--    Get Info Page-->
+    <string name="uploadImage">Upload Image</string>
+    <string name="feedback">Issue since</string>
+    <string name="what_is_the_frequency_of_service">What is the frequency of Service</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="quaterly">Quaterly</string>
+    <string name="anually">Anually</string>
+    <string name="staff_numbers">Staff Numbers</string>
+    <string name="submit">Submit</string>
+    <string name="callNow">Call Now</string>
+
+
+
     <string name="EmailIdHintRegOnLogin">Enter valid email id</string>
     <string name="error_mobilenumber_emailid_empty">Number or Email address cannot be empty</string>
     <string name="error_invalid_username">Please enter a valid username.</string>
@@ -19,13 +63,12 @@
     <string name="error_invalid_username_password">Please enter a valid username and password.</string>
     <string name="answer_all_questions">Answer all questions to Submit</string>
     <string name="error_empty_field"> cannot be empty.</string>
-    <string name="error_mobilenumberZero">"Mobile number cannot begin with a '0'."</string>
-    <string name="error_invalid_email">Please enter valid email address</string>
+
+
     <string name="changeNumber"><u>Change Mobile No</u></string>
     <string name="text_number_messsage">You will receive One Time Password(OTP) on the registered mobile no: %s</string>
 
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="titleOTP">"Didn't receive OTP?"</string>
     <string name="buttonmobileOTP"><u>Resend</u></string>
     <string name="otpSent">OTP is successfully sent.</string>
@@ -49,124 +92,6 @@
     <string name="feedbackIntro">Send \nUs Your \nFeedback</string>
     <string name="feedbackIntro2">Feedback Form</string>
 
-
-    //Buttons
-    <string name="continueBtnLogin">Continue</string>
-    <string name="submit">Submit</string>
-    <string name="callNow">Call Now</string>
-
-
-    // Assessment
-
-
-    <!--Enter Your Name Field-->
-    <string name="enter_your_name">Enter Your Name</string>
-
-    <!--Question 1-->
-    <string name="num_question_1">Question 1</string>
-    <string name="question_1">Which of the following are the primary goals of network security? (Choose 3 best answers)</string>
-
-    <!--Answers to the question 1-->
-    <string name="redundancy">Redundancy</string>
-    <string name="availability">Availability</string>
-    <string name="integrity">Integrity</string>
-    <string name="confidentiality">Confidentiality</string>
-    <string name="remote_access">Remote access</string>
-
-    <!--Question 2-->
-    <string name="num_question_2">Question 2</string>
-    <string name="question_2">Which of the following statements best describes confidentiality of information?</string>
-
-    <!--Answers to the question 2-->
-    <string name="answer_2_1">Refers to keeping the data private and preventing unauthorized access</string>
-    <string name="answer_2_2">Refers to making the data available any time that a client wants to access</string>
-    <string name="answer_2_3">Refers to keeping the data secure from being modified in storage or transmit</string>
-    <string name="answer_2_4">Refers to making the data private, secure and available</string>
-
-    <!--Question 3-->
-    <string name="num_question_3">Question 3</string>
-    <string name="question_3">According to Cisco, organizational data is classified into four categories. Which of the following is NOT classification category?</string>
-
-    <!--Answers to the question 3-->
-    <string name="publ">Public</string>
-    <string name="sensitive">Sensitive</string>
-    <string name="confidential">Confidential</string>
-    <string name="_private">Private</string>
-    <string name="trusty_worthy">Trusty worthy</string>
-
-    <!--Question 4-->
-    <string name="question_4">What are the THREE security solution that Cisco recommends for comprehensive security?</string>
-    <string name="num_question_4">Question 4</string>
-
-    <!--Answers to the question 4-->
-    <string name="managerial">Managerial</string>
-    <string name="physical">Physical</string>
-    <string name="logical">Logical</string>
-    <string name="administrative">Administrative</string>
-    <string name="geographical">Geographical</string>
-
-    <!--Question 5-->
-    <string name="num_question_5">Question 5</string>
-    <string name="question_5">Which of the following is true about Dynamic ARP Inspection (DAI) employed in a network switch? (Choose 3 best answers)</string>
-
-    <!--Answers to the question 5-->
-    <string name="answer_5_1">Intercept and examine all ARP request and response packets in a subnet and discard packets with invalid IP-to-MAC address bindings</string>
-    <string name="answer_5_2">Prevents STP attacks</string>
-    <string name="answer_5_3">DAI can prevent common man-in-the-middle (MIM) attacks such as ARP cache poisoning</string>
-    <string name="answer_5_4">Prevents mis-configuration of client IP addresses</string>
-    <string name="answer_5_5">Prevents CAM table overflows</string>
-
-    <!--Question 6-->
-    <string name="num_question_6">Question 6</string>
-    <string name="question_6">Which one of the following types of attack intentionally introduced a back door to a system?</string>
-
-    <!--Answers to the question 6-->
-    <string name="passive_attack">Passive attack</string>
-    <string name="active_attack">Active attack</string>
-    <string name="close_in_attack">Close-in attack</string>
-    <string name="insider_attack">Insider attack</string>
-    <string name="distribution_attack">Distribution attack</string>
-
-    <!--Question 7-->
-    <string name="num_question_7">Question 7</string>
-    <string name="Question_7">An organization screens its employees for any previous criminal records, as part of implementation of organizational security. It may be categorized as:</string>
-
-    <!--Answers to the question 7-->
-    <string name="physical_security">Physical security</string>
-    <string name="administrative_security">Administrative security</string>
-    <string name="logical_security">Logical security</string>
-    <string name="vulnerability">Vulnerability</string>
-
-    <!--Question 8-->
-    <string name="num_question_8">Question 8</string>
-    <string name="question_8">Which three of the following are the Confidentiality attack strategies? (Choose 3 best answers)</string>
-
-    <!--Answers to the question 8-->
-    <string name="packet_capture">Packet capture</string>
-    <string name="password_attack">Password attack</string>
-    <string name="dumpster_driving">Dumpster driving</string>
-    <string name="botnet">Botnet</string>
-    <string name="social_engineering">Social engineering</string>
-    <string name="tcpsyn_flood">TCPSYN Flood</string>
-
-    <!--Question 9-->
-    <string name="num_question_9">Question 9</string>
-    <string name="question_9">Which of the following are the Integrity attacks? (Choose 3 best answers)</string>
-
-    <!--Answers to the question 9-->
-    <string name="data_diddling">Data diddling</string>
-    <!--Rest of the answers to question 9 to watch in the answer to question 8 above-->
-
-    <!--Question 10-->
-    <string name="num_question_10">Question 10</string>
-    <string name="question_10">Which of the following are the attacks on availability of a resource? (Choose 2 best answers)</string>
-
-    <!--Answers to the question 9-->
-    <string name="denial_of_service">Denial of Service</string>
-    <!--Rest of the answers to question 10 to watch in the answer to question 8 above-->
-
-    <!--Button "End Test"-->
-    <string name="end_test">End test</string>
 
     <!--Test Result-->
     <string name="test_result_name">"Name: "</string>
@@ -193,15 +118,13 @@
     <string name="dob">Date of birth</string>
     <string name="age">Age</string>
     <string name="doJoining">Date of joining</string>
-    <string name="feedback">Issue since</string>
-    <string name="uploadImage">Upload Image</string>
+
+
     <string name="suggestionHint">Work Detail</string>
     <string name="suggestionByHint">Suggestion By</string>
     <string name="FeedbackOn">Feedback On</string>
     <string name="enter_feedbackon">Enter FeedbackOn</string>
     <string name="enter_designation">Enter your Name and Designation</string>
-    <string name="branch_address">Regd. Off.: Off. No. D/3-6, Ground Floor, Sitaladevi CHSL, Opp. Indian Oil Nagar, D.N. Nagar, Andheri (West), Mumbai – 400 053. (INDIA).</string>
-    <string name="admin_address">Regd. Off.: Off. No. D/3-6, Ground Floor, Sitaladevi CHSL, Opp. Indian Oil Nagar, D.N. Nagar, Andheri (West), Mumbai – 400 053. (INDIA).</string>
     <string name="email_address">info@triggroup.in</string>
     <string name="contact_number">+(91)-22-66783333</string>
     <string name="branch_heading">Branch Address</string>
@@ -218,32 +141,12 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="previous">Previous</string>
 
-    <string name="lbl_select_dob">DD-MM-YYYY</string>
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-
-    <!--register frag design changes-->
-    <string name="NameTxtViewReg">COMPANY\’S  NAME</string>
-    <string name="PasswordTxtViewReg">Password</string>
-    <string name="wifi_password">ENTER PASSWORD</string>
-    <string name="EmailTxtViewReg">COMPANY\’S EMAIL ADDRESS</string>
-    <string name="MobTxtViewReg">COMPANY\’S MOBILE NUMBER</string>
-    <string name="BtnTxtViewReg">Submit</string>
-    <string name="NameHintReg">Enter Name</string>
-    <string name="EmailHintReg">Enter Valid Email</string>
-
-    <string name="MobileNoHintReg">Enter Mobile Number</string>
-    <!--<string name="alreadyRegistered">Already have an account?<![CDATA[<b><font color=#0000FF>Login</font></b>]]></string>-->
-    <!--<string name="alreadyRegistered">Already have an account? <font fgcolor='#0099CC'>Login</font></string>-->
-    <!--    <string name="alreadyRegistered">"Already have an account? &lt;font color='#2196F3'&gt;Login&lt;/font&gt;"</string>-->
-    <string name="alreadyRegistered">Already have an account?</string>
-    <string name="RegisterLogin">Log In</string>
     <string name="logout">Log Out</string>
-    <string name="titleRegister">App will recognize you as the user and sync its data with this account.</string>
+
     <string name="privacy_info_register">By tapping Submit, you are indicating that you have read and agreed to our <b>Privacy Policy</b>.</string>
     <string name="titleTxtViewRegister">Register</string>
-    <string name="error_invalid_name">"Please enter Name"</string>
-    <string name="error_invalid_email_empty">Email address cannot be empty</string>
-    <string name="error_invalid_mobilenumber">Please enter a valid number.</string>
-    <string name="need">need?</string>
+
+
+
+
 </resources>

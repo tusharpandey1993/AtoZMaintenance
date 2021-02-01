@@ -178,7 +178,7 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
         }*/ else if (TextUtils.isEmpty(strMobileNumber)) {
             Utility.getInstance().showSnackbar(view, getResources().getString(R.string.error_invalid_mobilenumber));
             return false;
-        } else if (strMobileNumber.length() < 4) {
+        } else if (strMobileNumber.length() < 10) {
             Utility.getInstance().showSnackbar(view, getResources().getString(R.string.error_invalid_mobilenumber));
             return false;
         } else if (strMobileNumber.startsWith("0")) {

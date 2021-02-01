@@ -33,7 +33,6 @@
             android:fontFamily="@font/open_sans_bold"
             android:gravity="start"
             android:singleLine="true"
-            android:text="@string/hello_blank_fragment"
             android:textSize="@dimen/_12ssp"
             app:layout_constraintBottom_toTopOf="@+id/startDateHeading"
             app:layout_constraintEnd_toEndOf="parent"

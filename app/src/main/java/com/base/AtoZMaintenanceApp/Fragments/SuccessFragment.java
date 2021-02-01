@@ -1,5 +1,6 @@
 package com.base.AtoZMaintenanceApp.Fragments;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.os.Handler;
@@ -58,16 +59,13 @@ public class SuccessFragment extends Fragment {
         return mView;
     }
 
+    @SuppressLint("SetTextI18n")
     private void init(View mView) {
         lottieAnimationView = mView.findViewById(R.id.lottieAnimationView);
         SuccessTitle = mView.findViewById(R.id.SuccessTitle);
 
         if(AppPreferences.getSource_To_Desitnation(mActivity) == Constants.getInstance().loginScreen) {
             SuccessTitle.setText("Login Success");
-        } else if(AppPreferences.getSource_To_Desitnation(mActivity) == Constants.getInstance().feedback){
-            SuccessTitle.setText("Feedback Successfully Submitted!");
-        } else if(AppPreferences.getSource_To_Desitnation(mActivity) == Constants.getInstance().assessment){
-            SuccessTitle.setText("Assessment Successfully Submitted!");
         } else {
             SuccessTitle.setText("Success");
         }

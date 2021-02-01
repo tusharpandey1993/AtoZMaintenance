@@ -47,14 +47,14 @@
 
 
     <string-array name="homeItems">
-        <item>Carpenter</item>
-        <item>Painting</item>
-        <item>Gardening</item>
-        <item>Plumbing</item>
-        <item>Civil</item>
-        <item>Water Tank Cleaning</item>
-        <item>Fabrication</item>
-        <item>Electric Work</item>
+        <item>@string/Carpenter_txt</item>
+        <item>@string/Painting_txt</item>
+        <item>@string/Gardening_txt</item>
+        <item>@string/Plumbing_txt</item>
+        <item>@string/Civil_txt</item>
+        <item>@string/Water_Tank_Cleaning_txt</item>
+        <item>@string/Fabrication_txt</item>
+        <item>@string/Electric_Work_txt</item>
     </string-array>
 
 

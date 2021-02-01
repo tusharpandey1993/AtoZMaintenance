@@ -35,12 +35,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a877b7-8318-4539-8b45-0c4bfc925491" name="Default Changelist" comment="added backclicks">
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-hi/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/LocaleHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_language.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/CommonFiles/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/LoginFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/LoginFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/DashboardFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/DashboardFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/RegisterFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/RegisterFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/SuccessFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/SuccessFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_dashboard.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_login.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/quiz_child_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/quiz_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/report_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/report_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/toolbar_dash.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar_dash.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/video_list_child_view.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/video_list_child_view.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-hi/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-hi/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/arrays.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -382,7 +391,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610821797935</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="added hindi language for language settings">
+      <created>1612118294709</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1612118294709</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -420,7 +436,8 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="added dialogs" />
     <MESSAGE value="added backclicks" />
-    <option name="LAST_COMMIT_MESSAGE" value="added backclicks" />
+    <MESSAGE value="added hindi language for language settings" />
+    <option name="LAST_COMMIT_MESSAGE" value="added hindi language for language settings" />
   </component>
   <component name="WindowStateProjectService">
     <state x="254" y="27" width="915" height="741" key="#Java" timestamp="1609095909695">
@@ -443,26 +460,26 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="299" y="154" width="824" height="484" key="AndroidCreateResourceFileDialog/67.27.1299.741@67.27.1299.741" timestamp="1612116309009" />
+    <state x="533" y="179" width="357" height="434" key="AndroidCreateXmlResourceDialog" timestamp="1612174054058">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="533" y="179" width="357" height="434" key="AndroidCreateXmlResourceDialog/67.27.1299.741@67.27.1299.741" timestamp="1612174054058" />
     <state x="562" y="163" width="493" height="466" key="AndroidProcessChooserDialog" timestamp="1610819330827">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="562" y="163" width="493" height="466" key="AndroidProcessChooserDialog/67.27.1299.741@67.27.1299.741" timestamp="1610819330827" />
-    <state x="166" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1612118253330">
+    <state x="166" y="27" width="912" height="741" key="CommitChangelistDialog2" timestamp="1612195133350">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="166" y="27" width="912" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1612118253330" />
-    <state width="557" height="506" key="DebuggerActiveHint" timestamp="1603484973958">
+    <state x="166" y="27" width="912" height="741" key="CommitChangelistDialog2/67.27.1299.741@67.27.1299.741" timestamp="1612195133350" />
+    <state x="95" y="27" width="1131" height="681" maximized="true" key="DiffContextDialog" timestamp="1612195132004">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="557" height="506" key="DebuggerActiveHint/67.27.1299.741@67.27.1299.741" timestamp="1603484973958" />
-    <state x="95" y="27" width="1131" height="681" maximized="true" key="DiffContextDialog" timestamp="1612118252362">
+    <state x="95" y="27" width="1131" height="681" maximized="true" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1612195132004" />
+    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1612204922200">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="95" y="27" width="1131" height="681" maximized="true" key="DiffContextDialog/67.27.1299.741@67.27.1299.741" timestamp="1612118252362" />
-    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl" timestamp="1610815260602">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1610815260602" />
+    <state x="494" y="140" width="424" height="513" key="FileChooserDialogImpl/67.27.1299.741@67.27.1299.741" timestamp="1612204922200" />
     <state x="564" y="296" key="Github.ShareDialog" timestamp="1609095980543">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -487,26 +504,14 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="1253" height="277" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1611129063717" />
-    <state width="1253" height="120" key="GridCell.Tab.1.bottom" timestamp="1603485035505">
+    <state x="88" y="27" width="1138" height="680" key="MergeDialog" timestamp="1612118352236">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="120" key="GridCell.Tab.1.bottom/67.27.1299.741@67.27.1299.741" timestamp="1603485035505" />
-    <state width="1253" height="120" key="GridCell.Tab.1.center" timestamp="1603485035505">
+    <state x="88" y="27" width="1138" height="680" key="MergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1612118352236" />
+    <state x="347" y="157" width="728" height="478" key="MultipleFileMergeDialog" timestamp="1612118352238">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="120" key="GridCell.Tab.1.center/67.27.1299.741@67.27.1299.741" timestamp="1603485035505" />
-    <state width="1253" height="120" key="GridCell.Tab.1.left" timestamp="1603485035505">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state width="1253" height="120" key="GridCell.Tab.1.left/67.27.1299.741@67.27.1299.741" timestamp="1603485035505" />
-    <state width="1253" height="120" key="GridCell.Tab.1.right" timestamp="1603485035505">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state width="1253" height="120" key="GridCell.Tab.1.right/67.27.1299.741@67.27.1299.741" timestamp="1603485035505" />
-    <state x="88" y="27" width="1138" height="680" key="MergeDialog" timestamp="1610387030555">
-      <screen x="67" y="27" width="1299" height="741" />
-    </state>
-    <state x="88" y="27" width="1138" height="680" key="MergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1610387030555" />
+    <state x="347" y="157" width="728" height="478" key="MultipleFileMergeDialog/67.27.1299.741@67.27.1299.741" timestamp="1612118352238" />
     <state x="456" y="101" width="510" height="591" key="RollbackChangesDialog" timestamp="1610819624773">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -515,10 +520,10 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="205" y="31" key="SettingsEditor/67.27.1299.741@67.27.1299.741" timestamp="1608891588061" />
-    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1610821799374">
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2" timestamp="1612118373244">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1610821799374" />
+    <state x="311" y="132" width="800" height="528" key="Vcs.Push.Dialog.v2/67.27.1299.741@67.27.1299.741" timestamp="1612118373244" />
     <state x="488" y="176" width="446" height="440" key="chooseDestDirectoryDialog" timestamp="1610304761035">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -527,36 +532,31 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="167" y="125" width="1099" height="543" key="com.intellij.history.integration.ui.views.FileHistoryDialog/67.27.1299.741@67.27.1299.741" timestamp="1610818988722" />
-    <state x="292" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1603517375697">
-      <screen x="67" y="27" width="957" height="741" />
-    </state>
-    <state x="292" y="224" key="com.intellij.ide.util.TipDialog/67.27.957.741@67.27.957.741" timestamp="1603517375697" />
     <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610822010483">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state x="484" y="316" width="464" height="170" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/67.27.1299.741@67.27.1299.741" timestamp="1610822010483" />
-    <state x="368" y="136" width="717" height="522" key="find.popup" timestamp="1612117741456">
+    <state x="368" y="136" width="717" height="522" key="find.popup" timestamp="1612195513572">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="368" y="136" width="717" height="522" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1612117741456" />
-    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1612117707792">
+    <state x="368" y="136" width="717" height="522" key="find.popup/67.27.1299.741@67.27.1299.741" timestamp="1612195513572" />
+    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup" timestamp="1612205388288">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1612117707792" />
-    <state x="297" y="88" width="672" height="678" key="search.everywhere.popup/67.27.957.741@67.27.957.741" timestamp="1603517387368" />
+    <state x="379" y="88" width="672" height="678" key="search.everywhere.popup/67.27.1299.741@67.27.1299.741" timestamp="1612205388288" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/DashboardFragment.java</url>
-          <line>240</line>
+          <line>246</line>
           <properties class="com.base.AtoZMaintenanceApp.Fragments.DashboardFragment" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/base/AtoZMaintenanceApp/Fragments/SuccessFragment.java</url>
-          <line>79</line>
+          <line>77</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
